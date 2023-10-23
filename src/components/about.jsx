@@ -11,8 +11,8 @@ const About = () => {
     name='about'
      className="p-4 mt-20">
       <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">TESTIMONIALS</div>
-      <h1 className="text-center text-black text-[45px] font-normal font-['Baloo Da 2'] leading-7">What our customers are saying about us!</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <h1 className="text-center text-black text-[45px] font-normal font-['Baloo Da 2'] leading-7 mt-4">What our customers are saying about us!</h1>
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-2 ml-60 justify justify-items-center mr-60">
         <div className="w-[470px] h-[237px] pl-[35px] pr-7 pt-[35px] pb-[23px] justify-end items-start gap-[30px] inline-flex">
            <img className="w-[70px] h-[70px] rounded-[10px]" src= {User1} />
            <div className="w-[307px] relative">

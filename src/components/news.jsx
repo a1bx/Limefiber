@@ -1,7 +1,7 @@
 import React from 'react';
 import News1 from '../assets/newsimage1.svg';
 import News2 from '../assets/news2.svg';
-import ArrowRight from '../assets/arrowright.svg'; // Assuming you have an arrow-right icon
+import ArrowRight from '../assets/arrowright.svg'; 
 
 const News = () => {
   return (
