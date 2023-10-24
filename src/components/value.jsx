@@ -9,13 +9,13 @@ import Map from '../assets/map.svg';
 
 const Value = () => {
   return (
-    <div className='mt-10 ml-40'>
+    <div className='mt-20 ml-40'>
       <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mb-2">VALUE PROPOSITION</div>
       <h1 className="text-center text-5xl font-semibold font-['Baloo Da 2'">
         LimeFiber Vision and Goals
       </h1>
       <div className="flex ml-40 gap-4 p-5 mt-8 justify-items-center">
-        {/* Card 1 */}
+        
         <div className="w-[352px] h-[508px] bg-white rounded-[28px]">
           <img src={Icon1} alt="Icon 1" className="w-[72px] h-[72px] mx-auto mb-2" />
           <h2 className="font-semibold text-[32px] text-center font-['Baloo Da 2'] leading-7">Unlimited Internet</h2>
@@ -27,7 +27,7 @@ const Value = () => {
         <div className="" />
         <div className="w-[86.01px] h-[0px]  rotate-[89.33deg] border mt-60"></div>
         
-        {/* Card 2 */}
+         
         <div className="w-[352px] h-[508px] bg-white rounded-[28px]">
           <img src={Icon2} alt="Icon 2" className="w-[72px] h-[72px] mx-auto mb-2" />
           <h2 className="font-semibold text-[32px] text-center font-['Baloo Da 2'] leading-7">Simple and Secure</h2>
@@ -37,8 +37,8 @@ const Value = () => {
           <button className='ml-28 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white'>Learn More</button>
         </div>
 
-        <div className="w-[86.01px] h-[0px]  rotate-[89.33deg] border mt-60"></div>
-        {/* Card 3 */}
+        <div className="w-[86.01px] h-[0px] rotate-[89.33deg] border mt-60"></div>
+        
         <div className="w-[352px] h-[508px] bg-white rounded-[28px]">
           <img src={Icon3} alt="Icon 3" className="w-[72px] h-[72px] mx-auto mb-2  " />
           <h2 className="font-semibold text-[32px] text-center font-['Baloo Da 2'] leading-7">Customer Support</h2>

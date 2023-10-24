@@ -10,7 +10,7 @@ import Arrow from '../assets/arrowright.svg';
 
 const Services = () => {
   return (
-  <div className='relative'>
+  <div className='relative mt-20'>
       <img src={Ellipse13} alt="" className='absolute top-20 right-2 w-[820px] h-[594px]' />
     <div className=' ml-10 relative bg-lightgreen mt-20 w-[1492px] h-[594px] rounded-tr-[400px] rounded-bl-[400px]'>
       <div className="relative" />

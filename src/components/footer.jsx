@@ -5,17 +5,18 @@ import IconColor from '../assets/Icon color.svg';
 const Footer = () => {
   return (
     <div className='mt-20 justify-between '>
+      <div className="w-screen h-[0px] border border-zinc-300"></div>
       <footer className="p-2 text-base-content rounded flex">
-        <img src={Logo} alt="" />
-        <div className="w-[369px] h-[32.17px] text-neutral-500 text-base font-normal font-['Baloo Da 2'] leading-relaxed mt-20">© 2023 LimeFiber. All rights reserved.</div>
-        <div className="flex gap-4 ">
+        <img src={Logo} alt="" className="w-[200px] h-[75px] mt-10" />
+        <div className="w-[369px] h-[32.17px]text-base font-normal font-['Baloo Da 2'] leading-relaxed mt-20">© 2023 LimeFiber. All rights reserved.</div>
+        <div className="flex gap-10 absolute ml-10">
           <a href='contact' className="link link-hover hover:text-red">CONTACT</a>
           <a href='about' className="link link-hover hover:text-red">ABOUT US</a>
-          <div className="text-neutral-500 text-base font-normal font-['Baloo Da 2'] leading-[27px] hover:text-red">TERMS OF SERVICES</div>
+          <div className="text-base font-normal font-['Baloo Da 2'] leading-[27px] hover:text-red ">TERMS OF SERVICES</div>
         </div>
 
          
-        <div className='relative ml-40'>
+        <div className='relative ml-[704px]'>
           <div className="w-[396px] h-[0px] border border-black mt-10 ml-10 absolute"></div>
           <div className="text-base font-normal font-['Baloo Da 2'] leading-[27px] w-[396px] h-[66px] border-bottom border-black relative ml-10 ">Subscribe to our newsletters
           <img src={IconColor} alt="" className='ml-60 bottom-2 relative' />

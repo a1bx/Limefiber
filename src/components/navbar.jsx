@@ -16,17 +16,18 @@ const Navbar = () => {
         },
         {
           id: 3,
-          link: "About",
+          link: "About Us",
         },
         {
           id: 4,
-          link: "Contact",
+          link: "Contacts",
         },
       ];
   return (
     
-    <div className="ml-20 mx-auto flex justify-between items-center">
-        <img src={Logo} alt="" className='' />
+    <div className="ml-20  mx-auto flex justify-between items-center">
+      <img src={Logo} alt="" className='' />
+        <div className="ml-[500px] gap-8 mx-auto flex justify-between items-center">
         <ul className="flex space-x-6">
             {links.map(({ id, link }) => (
               <li key={id} className="hover:text-red cursor-pointer">
@@ -51,7 +52,8 @@ const Navbar = () => {
               </ul>
               
             )}
-            <div className="">
+            </div>
+            <div className="mr-10">
           <button className="px-4 py-2 rounded-md hover:bg-green hover-text-white">Log in</button>
           <button className="px-4 py-2 rounded-md bg-green hover:bg-green hover-text-white text-white">Sign up</button>
         </div>
