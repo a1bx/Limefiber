@@ -11,6 +11,10 @@ module.exports = {
       "green":"#75A774",
       "gray":"#F2F2F2"
     },
+    font: {
+      "baloo": ["Baloo Tamma 2", "sans-serif"]
+    },
+
     extend: {},
   },
   plugins: [],

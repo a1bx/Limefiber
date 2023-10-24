@@ -53,7 +53,7 @@ const Navbar = () => {
             )}
             <div className="">
           <button className="px-4 py-2 rounded-md hover:bg-green hover-text-white">Log in</button>
-          <button className="px-4 py-2 rounded-md hover:bg-green hover-text-white">Sign up</button>
+          <button className="px-4 py-2 rounded-md bg-green hover:bg-green hover-text-white text-white">Sign up</button>
         </div>
       </div>
   )

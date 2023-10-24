@@ -1,10 +1,11 @@
 import React from 'react';
 import ServiceIcon1 from '../assets/serviceicon1.svg';
-import ServiceIcon2 from '../assets/servIcon2.svg';
-import PremIcon from '../assets/premium.svg';
-import ProIcon from '../assets/pro.svg';
+// import ServiceIcon2 from '../assets/servIcon2.svg';
+// import PremIcon from '../assets/premium.svg';
+// import ProIcon from '../assets/pro.svg';
 import Ellipse13 from '../assets/ellipse13.svg';
 import { FiChevronRight,FiChevronLeft } from "react-icons/fi";
+import Arrow from '../assets/arrowright.svg';
  
 
 const Services = () => {
@@ -19,8 +20,10 @@ const Services = () => {
         </span>
         <span className="text-[45px] font-normal font-['Baloo Da 2'] leading-[47.83px]">Services and Packages</span>
       </div>
-
       <div className='flex '>
+      <div className="col-md-1">
+            <img src={Arrow} alt="" className="arrow mt-[60px]"/>
+            </div>
       <FiChevronLeft/>
       <FiChevronRight/>
       <div className="flex gap-4 p-2 mt-8 ml-60 relative z-10">

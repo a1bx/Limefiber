@@ -9,11 +9,11 @@ const News = () => {
       <div className="flex">
         <div className="w-1/2 p-8">
           <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">BLOG & NEWS</div>
-          <div className="text-black text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px]">News</div>
-          <div className="mt-4 font-['Baloo Da 2'] leading-normal">
+          <div className="text-black text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px] text-center">News</div>
+          <div className="mt-4 font-['Baloo Da 2'] leading-normal text-center">
             LimeFiber expands operations in Northern Kenya, Western Kenya and more!
           </div>
-          <button className="bg-green text-white px-4 rounded-md hover:bg-green hover:text-white mt-4 py-2">Learn more</button>
+          <button className="bg-green ml-60 text-white px-4 rounded-md hover:bg-green hover:text-white mt-4 py-2">Learn more</button>
         </div>
 
         <div className="flex gap-3 p-4 relative">
@@ -25,7 +25,6 @@ const News = () => {
           <input type="radio" name="radio-8" className="radio radio-error" />
           </div>
           </div>
-          
           <div className="absolute right-5 top-1/2 transform -translate-y-1/2">
             <img src={ArrowRight} alt="Arrow Right" />
           </div>
