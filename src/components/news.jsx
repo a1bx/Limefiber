@@ -7,7 +7,7 @@ import ArrowRight from '../assets/arrowright.svg';
 const News = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [News1, News2,  News3];
+  const images = [News1, News2, News3];
 
   const nextImage = () => {
     if (currentImageIndex < images.length - 1) {
@@ -22,7 +22,7 @@ const News = () => {
   // };
 
   return (
-    <div className="h-[700px] w-screen bg-lightgreen mt-20">
+    <div className="h-[700px] w-screen bg-lightgreen mt-20 relative">
       <div className="flex mr-[200px]">
         <div className="w-1/2 p-8">
           <div className="ml-40 text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mt-40">
@@ -38,23 +38,22 @@ const News = () => {
             Learn more
           </button>
         </div>
-        <div className="radio-buttons absolute flex ml-[980px] mt-[650px] mr-10">
-          <div className="w-[27px] h-[27px] relative">
-            <div className="w-[27px] h-[27px] left-0 top-0 absolute opacity-70 rounded-full border border-red" />
-            <div className="w-[11px] h-[11px] left-[8px] top-[8px] absolute bg-red rounded-full border border-red" />
-          </div>
-          <div className="w-[27px] h-[27px] ml-2 relative">
-            <div className="w-[27px] h-[27px] top-0 absolute opacity-70 rounded-full" />
-            <div className="w-[11px] h-[11px] left-[8px] top-[8px] absolute bg-gray rounded-full border border-red" />
-          </div>
-          <div className="w-[27px] h-[27px] relative">
-            <div className="w-[27px] h-[27px] left-0 top-0 absolute opacity-70 rounded-full" />
-            <div className="w-[11px] h-[11px] left-[8px] top-[8px] absolute bg-gray rounded-full border border-red" />
-          </div>
-          <div className="w-[27px] h-[27px] relative">
-            <div className="w-[27px] h-[27px] left-0 top-0 absolute opacity-70 rounded-full" />
-            <div className="w-[11px] h-[11px] left-[8px] top-[8px] absolute bg-gray rounded-full border border-red" />
-          </div>
+
+        <div className="radio-buttons absolute flex ml-[1080px] mt-[650px] mr-10">
+          {images.map((image, index) => (
+            <div key={index} className="w-[27px] h-[27px] relative">
+              <div
+                className={`w-[27px] h-[27px] ${
+                  index === currentImageIndex ? 'opacity-70' : ''
+                } rounded-full border border-red`}
+              ></div>
+              <div
+                className={`w-[11px] h-[11px] left-[8px] top-[8px] absolute ${
+                  index === currentImageIndex ? 'bg-red' : 'bg-gray'
+                } rounded-full border border-red`}
+              ></div>
+            </div>
+          ))}
         </div>
 
         <div className="flex gap-3 p-4 relative ml-60">
@@ -73,7 +72,7 @@ const News = () => {
             className="cursor-pointer"
           />
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
