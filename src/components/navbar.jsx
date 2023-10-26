@@ -7,11 +7,11 @@ const Navbar = () => {
     const [nav,setNav] = useState(false);
     const links = [
         {
-          id: 1,
+          id: '/',
           link: "Home",
         },
         {
-          id: 2,
+          id: '/services',
           link: "Services",
         },
         {
@@ -24,9 +24,8 @@ const Navbar = () => {
         },
       ];
   return (
-    
-    <div className="ml-20  mx-auto flex justify-between items-center">
-      <img src={Logo} alt="" className='' />
+    <div className="ml-20 mx-auto flex justify-between items-center">
+      <img src={Logo} alt="" className='mt-10' />
         <div className="ml-[500px] gap-8 mx-auto flex justify-between items-center">
         <ul className="flex space-x-6">
             {links.map(({ id, link }) => (

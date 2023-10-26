@@ -3,11 +3,12 @@ import News1 from '../assets/newsimage1.svg';
 import News2 from '../assets/news2.svg';
 import News3 from '../assets/news3.svg';
 import ArrowRight from '../assets/arrowright.svg';
+import Indicator from '../assets/indicator.svg';
 
 const News = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [News1, News2, News3];
+  const images = [News1, News2,  News3];
 
   const nextImage = () => {
     if (currentImageIndex < images.length - 1) {
@@ -15,20 +16,20 @@ const News = () => {
     }
   };
 
-  // const prevImage = () => {
-  //   if (currentImageIndex > 0) {
-  //     setCurrentImageIndex(currentImageIndex - 1);
-  //   }
-  // };
+  const prevImage = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex(currentImageIndex - 1);
+    }
+  };
 
   return (
-    <div className="h-[700px] w-screen bg-lightgreen mt-20 relative">
-      <div className="flex mr-[200px]">
+    <div className="h-[650px] w-screen bg-lightgreen mt-20 mr-40">
+      <div className="flex">
         <div className="w-1/2 p-8">
-          <div className="ml-40 text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mt-40">
+          <div className="ml-40 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mt-40">
             BLOG & NEWS
           </div>
-          <div className="text-black text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px] ml-40">
+          <div className="text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px] ml-40">
             News
           </div>
           <div className="mt-4 font-['Baloo Da 2'] leading-normal ml-40">
@@ -38,29 +39,14 @@ const News = () => {
             Learn more
           </button>
         </div>
+        
 
-        <div className="radio-buttons absolute flex ml-[1080px] mt-[650px] mr-10">
-          {images.map((image, index) => (
-            <div key={index} className="w-[27px] h-[27px] relative">
-              <div
-                className={`w-[27px] h-[27px] ${
-                  index === currentImageIndex ? 'opacity-70' : ''
-                } rounded-full border border-red`}
-              ></div>
-              <div
-                className={`w-[11px] h-[11px] left-[8px] top-[8px] absolute ${
-                  index === currentImageIndex ? 'bg-red' : 'bg-gray'
-                } rounded-full border border-red`}
-              ></div>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex gap-3 p-4 relative ml-60">
+        <div className="flex gap-3 p-4 relative ">
+        <img src={Indicator} alt="" className='mt-[569px] ml-[500px] absolute' />
           {images.map((image, index) => (
             <img
               key={index}
-              className={`w-full h-[${index === currentImageIndex ? 556 : 486}px]`}
+              className={`w-full  h-[${index === currentImageIndex ? 556 : 486}px]`}
               src={image}
               alt={`News ${index + 1}`}
             />
@@ -69,8 +55,9 @@ const News = () => {
             src={ArrowRight}
             alt="Arrow Right"
             onClick={nextImage}
-            className="cursor-pointer"
+            className="cursor-pointer mr-20"
           />
+          
         </div>
       </div>
     </div>

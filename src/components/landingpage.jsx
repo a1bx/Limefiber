@@ -27,7 +27,7 @@ const Landingpage = () => {
           </div>
         </div>
         <div className="relative w-2/3 ml-11 items-start">
-          <img className="w-[706px] h-[662px] relative" src={People} />
+          <img className="w-[706px] h-[562px] relative" src={People} />
         </div>
       </div>
     </div>

@@ -6,13 +6,15 @@ import ServiceIcon1 from '../assets/serviceicon1.svg';
 import Ellipse13 from '../assets/ellipse13.svg';
 import { FiChevronRight,FiChevronLeft } from "react-icons/fi";
 import Arrow from '../assets/arrowright.svg';
+import { AiOutlineRight } from "react-icons/ai";
+import Arrows from '../assets/arrows.svg';
  
 
 const Services = () => {
   return (
   <div className='relative mt-20'>
       <img src={Ellipse13} alt="" className='absolute top-20 right-2 w-[820px] h-[594px]' />
-    <div className=' ml-10 relative bg-lightgreen mt-20 w-[1492px] h-[594px] rounded-tr-[400px] rounded-bl-[400px]'>
+    <div className=' ml-10 relative bg-lightgreen mt-20 w-[1592px] h-[594px] rounded-tr-[400px] rounded-bl-[400px]'>
       <div className="relative" />
        <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] p-4">SERVICES & PRODUCTS</div>
        <div className="text-center p-4">
@@ -24,10 +26,9 @@ const Services = () => {
       <div className="col-md-1">
             <img src={Arrow} alt="" className="arrow mt-[60px]"/>
             </div>
-      <FiChevronLeft/>
-      <FiChevronRight/>
+       
       <div className="flex gap-4 p-2 mt-8 ml-60 relative z-10">
-      
+        <img src={Arrows} alt="" className='mt-[200px]' />
         <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
           <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">BASIC PACKAGE</div>
@@ -58,7 +59,7 @@ const Services = () => {
         </div>
       </div>
       </div> 
-      <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-10 cursor-pointer">See More Services and Products</div>
+      <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-10 cursor-pointer">See More Services and Products <AiOutlineRight/></div>
     </div> 
   </div>
   );
