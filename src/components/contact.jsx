@@ -7,9 +7,9 @@ const contact = () => {
   return (
     <div className='flex mt-[200px]'>
         <div className='flex gap-3 p-4 relative ml-60'>
-        <img src={Ellipse16} alt="" className='absolute w-[459px] h-[600px] left-20 ml-10 top-16' />
-        <img src={Vector9} alt="" className=' w-[600px] h-[500px] ml-20 top-20 absolute' />
-        <img className="w-[750.95px] h-[719.92px] relative" src={Contact}/>
+        <img src={Ellipse16} alt="" className='absolute w-[459px] h-[700px] left-20 ml-10 top-16' />
+        <img src={Vector9} alt="" className=' w-[550px] h-[500px] mt-10 ml-20 top-20 absolute' />
+        <img className="w-[780.95px] h-[770.92px] relative" src={Contact}/>
         
         </div>
         <div className="w-1/2 p-8 mt-10">
