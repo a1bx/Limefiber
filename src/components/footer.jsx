@@ -4,7 +4,7 @@ import IconColor from '../assets/Icon color.svg';
 
 const Footer = () => {
   return (
-    <div className='mt-20 justify-between '>
+    <div className='mt-10 justify-between '>
       <div className="w-screen h-[0px] border border-zinc-300"></div>
       <footer className="p-2 text-base-content rounded flex">
         <img src={Logo} alt="" className="w-[200px] h-[75px] mt-10" />
