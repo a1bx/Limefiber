@@ -7,7 +7,7 @@ import Arrow1 from '../assets/arrowup.svg';
 
 const Landingpage = () => {
   return (
-    <div name='home' className="ml-2 h-[900px] p-4">
+    <div name='home' className="ml-2 h-[700px] p-4">
       <div className="flex flex-col w-full lg:flex-row mt-10">
         <div>
           <div className="text text-6xl font-semibold font-['Baloo Da 2'] leading-[81px] mb-2 p-10 ml-10">

@@ -9,7 +9,7 @@ import Map from '../assets/map.svg';
 
 const Value = () => {
   return (
-    <div className='mt-30 ml-40'>
+    <div className='ml-40'>
       <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mb-2">VALUE PROPOSITION</div>
       <h1 className="text-center text-5xl font-semibold font-['Baloo Da 2'">
         LimeFiber Vision and Goals

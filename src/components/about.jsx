@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div
     name='about'
-     className="p-4 mt-[350px] h-[900px]">
+     className="p-4 mt-[150px] h-[700px]">
       <div className="text-center text-zinc-500 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">TESTIMONIALS</div>
       <h1 className="text-center text-black text-[45px] font-normal font-['Baloo Da 2'] leading-7 mt-4">What our customers are saying about us!</h1>
       <div className="grid grid-cols-2 md:grid-cols-2 gap-2 ml-60 justify justify-items-center mr-60">

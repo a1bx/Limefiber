@@ -23,7 +23,7 @@ const News = () => {
   };
 
   return (
-    <div className="h-[650px] w-screen bg-lightgreen mt-20 mr-40">
+    <div className="h-[650px] w-screen bg-lightgreen mr-40">
       <div className="flex">
         <div className="w-1/2 p-8">
           <div className="ml-40 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mt-40">
