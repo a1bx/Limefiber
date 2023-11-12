@@ -33,9 +33,9 @@ const Services = () => {
       
       <div className='flex '>
       <div className="flex gap-4 p-2 mt-8 ml-60 relative z-10">
-        <button className='flex size-auto place-items-center' onClick={scrollLeft}>
-        <AiOutlineLeftCircle/>
-        <AiOutlineRightCircle/>
+        <button className='flex size-auto place-items-center mt-[200px]' onClick={scrollLeft}>
+        <AiOutlineLeftCircle style={{ fontSize: '2em' }}/>
+        <AiOutlineRightCircle style={{ fontSize: '2em' }}/>
           </button>
         <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
