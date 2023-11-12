@@ -11,7 +11,7 @@ const Navbar = () => {
           link: "Home",
         },
         {
-          id: '/services',
+          id: '/Services',
           link: "Services",
         },
         {
