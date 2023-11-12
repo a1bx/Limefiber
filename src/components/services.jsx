@@ -9,12 +9,13 @@ const Services = () => {
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft -= 100;
+      scrollRef.current.scrollLeft -= 3;
     }
   };
+
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft += 200; // Adjust the scroll distance as needed
+      scrollRef.current.scrollLeft += 3;
     }
   };
 
