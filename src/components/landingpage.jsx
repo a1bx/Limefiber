@@ -1,13 +1,15 @@
 import React from 'react';
 import Learn from '../assets/learn.svg';
 import People from '../assets/People1.png';
-import Ellipse1 from '../assets/ellipse1.svg';
-import Arrow from '../assets/arrowdown.svg';
-import Arrow1 from '../assets/arrowup.svg';
+// import Ellipse1 from '../assets/ellipse1.svg';
+// import Arrow from '../assets/arrowdown.svg';
+// import Arrow1 from '../assets/arrowup.svg';
+import { Navigate } from 'react-router-dom';
 
-const Landingpage = () => {
+const Home = () => {
   return (
-    <div name='home' className="ml-2 h-[760px] p-4">
+    <div  className="ml-2 h-[760px] p-4">
+      {/* <Navigate to='/home' /> */}
       <div className="flex flex-col w-full lg:flex-row mt-10">
         <div>
           <div className="text text-6xl font-semibold font-['Baloo Da 2'] leading-[81px] mb-2 p-10 ml-10">
@@ -34,4 +36,4 @@ const Landingpage = () => {
   );
 }
 
-export default Landingpage;
+export default Home;

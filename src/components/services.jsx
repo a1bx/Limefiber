@@ -36,30 +36,32 @@ const Services = () => {
       <div className="flex gap-4 p-2 mt-8 ml-60 relative z-10">
         <button className='flex size-auto place-items-center mt-[200px]' onClick={scrollLeft}>
         <AiOutlineLeftCircle style={{ fontSize: '2em' }}/>
-        <AiOutlineRightCircle style={{ fontSize: '2em' }}/>
           </button>
-        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
+          <button className='flex size-auto place-items-center mt-[200px]' onClick={scrollRight}>
+          <AiOutlineRightCircle style={{ fontSize: '2em' }}/>
+          </button>
+        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
           <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">BASIC PACKAGE</div>
           <p className="text-sm max-w-full p-4 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
           </p>
         </div>
-        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
+        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
           <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">BASIC PACKAGE</div>
           <p className="text-sm max-w-full p-4 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
           </p>
         </div>
-        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
+        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
           <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">BASIC PACKAGE</div>
           <p className="text-sm max-w-full p-4 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
           </p>
         </div>
-        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10">
+        <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
           <img src={ServiceIcon1} alt="Icon 1" className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2" />
           <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">BASIC PACKAGE</div>
           <p className="text-sm max-w-full p-4 ">
