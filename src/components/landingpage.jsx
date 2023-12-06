@@ -1,14 +1,17 @@
 import React from 'react';
 import Learn from '../assets/learn.svg';
 import People from '../assets/People1.png';
+import { Link } from 'react-router-dom';
 // import Ellipse1 from '../assets/ellipse1.svg';
 // import Arrow from '../assets/arrowdown.svg';
 // import Arrow1 from '../assets/arrowup.svg';
-import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router-dom';
 
 const Home = () => {
   return (
+  
     <div  className="ml-2 h-[760px] p-4">
+      <link rel="home" href="" />
       {/* <Navigate to='/home' /> */}
       <div className="flex flex-col w-full lg:flex-row mt-10">
         <div>
