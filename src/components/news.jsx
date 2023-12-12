@@ -25,19 +25,22 @@ const News = () => {
   };
 
   return (
-    <div className="h-[650px] w-screen bg-lightgreen mr-40">
-      <div className="flex">
-        <div className="w-1/2 p-8">
-        <div className="ml-40 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mt-40">
-            BLOG & NEWS
+    <div className="h-[650px] max-w-[100%] md:overflow-x-hidden w-screen bg-lightgreen mr-40 relative">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-1/2 p-8 ml-20">
+          <div className='mb-96 md:mb-0'>
+            <div className="mt-40 text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
+              BLOG & NEWS
+            </div>
+            <div className="text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px]">
+              News
+            </div>
           </div>
-          <div className="text-[40px] font-semibold font-['Baloo Da 2'] leading-[48px] ml-40">
-            News
+          <div className="mt-4 font-['Baloo Da 2'] leading-normal">
+            LimeFiber expands operations in Northern Kenya, Western Kenya, and
+            more!
           </div>
-          <div className="mt-4 font-['Baloo Da 2'] leading-normal ml-40">
-            LimeFiber expands operations in Northern Kenya, Western Kenya, and more!
-          </div>
-          <button className="bg-green ml-40 text-white px-4 rounded-md hover:bg-green hover:text-white mt-4 py-2">
+          <button className="bg-green text-white px-4 rounded-md hover:bg-green hover:text-white mt-4 py-2">
             Learn more
           </button>
         </div>
@@ -54,7 +57,7 @@ const News = () => {
                 />
                 <span
                   className={`indicator ${
-                    index === currentImageIndex ? 'bg-red' : ''
+                    index === currentImageIndex ? "bg-red" : ""
                   }`}
                 ></span>
               </label>
@@ -63,12 +66,14 @@ const News = () => {
           {images.map((image, index) => (
             <img
               key={index}
-              className={`w-full h-[${index === currentImageIndex ? 500 : 400}px] p-4 mt-5 cursor-pointer`}
+              className={`w-full h-[${
+                index === currentImageIndex ? 500 : 400
+              }px] p-4 mt-5 cursor-pointer`}
               src={image}
               alt={`News ${index + 1}`}
               style={{
                 transform: `scale(${index === currentImageIndex ? 1.2 : 1})`,
-                transition: 'transform 0.8s ease',
+                transition: "transform 0.8s ease",
               }}
               onClick={() => changeImage(index)}
             />
