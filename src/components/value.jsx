@@ -34,14 +34,14 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-24 md:ml-20 px-4 py-2 justify-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="ml-28 md:ml-20 px-4 py-2 justify-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
         </div>
 
         <div
           className="hidden sm:block w-[86.01px] h-[0px]  rotate-[89.33deg] border mt-60"
-          style={{ borderColor: "#D8D8D8" }}
+          // style={{ borderColor: "#D8D8D8" }}
         ></div>
 
         <div className="w-full md:w-[352px] h-[380px] md:h-[508px] bg-white rounded-[28px]">
@@ -61,7 +61,7 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-24 md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="ml-28 md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
         </div>
@@ -88,7 +88,7 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-24 md:ml-20  mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="ml-28 md:ml-20  mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
         </div>
