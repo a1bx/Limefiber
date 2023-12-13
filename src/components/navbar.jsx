@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import Logo from '../assets/logo.png';
 import NavLinks from './navlinks';
 import { Link } from "react-scroll";
+import ProfileIcon from '../assets/profileIcon.svg';
+import Menu from '../assets/menu.svg';
 
 const Navbar = () => {
     const [nav,setNav] = useState(false);
@@ -11,8 +13,8 @@ const Navbar = () => {
           link: "Home",
         },
         {
-          id: '/Services',
-          link: "Services",
+          id: 'Products',
+          link: "Products",
         },
         {
           id: 3,
@@ -25,7 +27,7 @@ const Navbar = () => {
       ];
   return (
     <div className="md:ml-20 ml-10 mx-auto flex justify-between items-center max-w-full overflow-x-hidden">
-      <img src={Logo} alt="" className="w-[130px] md:w-[150px] mt-10" />
+      <img src={Logo} alt="" className="w-[130px] md:w-[150px] mt-4" />
       <div className="ml-[300px] gap-8 mx-auto flex justify-between items-center hidden md:block">
         <ul className="flex space-x-6">
           {links.map(({ id, link }) => (
@@ -56,7 +58,9 @@ const Navbar = () => {
         </button>
       </div>
       <div className="mr-10 md:hidden block flex gap-10">
-        <svg
+        <img src={ProfileIcon} alt="" />
+        <img src={Menu} alt="" />
+        {/* <svg
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +83,8 @@ const Navbar = () => {
             className="cls-6374f8d9b67f094e4896c670-1"
             d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"
           ></path>
-        </svg>
-        <svg
+        </svg> */}
+        {/* <svg
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +118,7 @@ const Navbar = () => {
             x2="23.5"
             y2="21.58"
           ></line>
-        </svg>
+        </svg> */}
       </div>
     </div>
   );
