@@ -57,7 +57,7 @@ const Navbar = () => {
           Sign up
         </button>
       </div>
-      <div className="mr-10 md:hidden block flex gap-10">
+      <div className="mr-10 md:hidden flex gap-10">
         <img src={ProfileIcon} alt="" />
         <img src={Menu} alt="" />
         {/* <svg

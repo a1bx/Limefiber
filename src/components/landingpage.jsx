@@ -1,11 +1,12 @@
 import React from 'react';
 import Learn from '../assets/learn.svg';
 import People from '../assets/People1.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import Ellipse1 from '../assets/ellipse1.svg';
 // import Arrow from '../assets/arrowdown.svg';
 // import Arrow1 from '../assets/arrowup.svg';
 // import { Navigate } from 'react-router-dom';
+import Banner from '../assets/banner.svg';
 
 const Home = () => {
   return (
@@ -40,13 +41,11 @@ const Home = () => {
             </div>
           </div>
           <div className="relative w-2/3 items-start">
-            <img className="w-[900px] h-[562px] relative" src={People} />
+            <img className="w-auto h-auto relative" src={People} />
           </div>
         </div>
       </div>
-      <div className='block lg:hidden p-10 rounded w-[90%] mt-10 h-[300px] mx-auto bg-green'>
-        banner 2
-      </div>
+      <img src={Banner} className='block md:hidden  rounded w-[95%] mt-10 h-[300px] mx-auto' />
     </>
   );
 }

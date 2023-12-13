@@ -20,6 +20,7 @@ const contact = () => {
         <img
           className="w-5/6 md:w-[780.95px] md:h-[770.92px] relative"
           src={Contact}
+          alt=""
         />
       </div>
       <div className="md:w-1/2 w-[100%] p-8 md:mt-20 text-center md:text-left">
@@ -42,7 +43,7 @@ const contact = () => {
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
         </div>
-        <div className="w-[515px] w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
+        <div className="w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
