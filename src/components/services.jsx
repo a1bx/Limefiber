@@ -46,13 +46,13 @@ const Services = () => {
         <div className="flex ">
           <div className="flex gap-2 md:gap-4 p-2 md:mt-8 ml-5 md:ml-20 relative z-10">
             <button
-              className="hidden md:block flex size-auto place-items-center mt-[200px] opacity-30"
+              className="hidden md:block  size-auto place-items-center mt-[200px] opacity-30"
               onClick={scrollLeft}
             >
               <AiOutlineLeftCircle style={{ fontSize: "2em" }} />
             </button>
             <button
-              className="hidden md:block flex size-auto place-items-center mt-[200px]"
+              className="hidden md:block  size-auto place-items-center mt-[200px]"
               onClick={scrollRight}
             >
               <AiOutlineRightCircle style={{ fontSize: "2em" }} />
