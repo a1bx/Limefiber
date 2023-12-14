@@ -34,9 +34,11 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-28 md:ml-20 px-4 py-2 justify-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <div className="flex place-items-center">
+          <button className="ml-28 md:ml-20 px-4 py-2 place-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
+          </div>
         </div>
 
         <div
@@ -61,9 +63,11 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-28 md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <div className="flex place-self-center">
+          <button className="ml-28 place-self-center md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
+          </div>
         </div>
 
         <div
@@ -88,7 +92,7 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-28 md:ml-20  mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="ml-28 md:ml-20 place-self-center mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
         </div>
