@@ -92,23 +92,56 @@
 
 // export default News;
 
-import React from 'react'
-import Newspic from '../assets/newsPic1.svg'
+import React, { useState } from 'react';
+import Newspic1 from '../assets/newsPic1.svg';
+import Newspic2 from '../assets/news2.svg'; 
+import Newspic3 from '../assets/news3.svg'; 
 
-const news = () => {
+const News = () => {
+  const images = [Newspic1, Newspic2, Newspic3];
+  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleImageChange = (index) => {
+    setCurrentImage(images[index]);
+    setActiveIndex(index);
+  };
+
+  const handleSwipe = (direction) => {
+    const newIndex = direction === 'next' ? (activeIndex + 1) % images.length : (activeIndex - 1 + images.length) % images.length;
+    handleImageChange(newIndex);
+  };
+
   return (
     <>
-    <div className="text-center text-zinc-500 text-[9px] font-normal font-['Baloo Da 2'] leading-7 tracking-[4.05px]">
-      BLOG & NEWS
-    </div>
-    <div className="text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
-      LimeFiber News and Stories
+      <div className="text-center text-zinc-500 text-[9px] font-normal font-['Baloo Da 2'] leading-7 tracking-[4.05px]">
+        BLOG & NEWS
       </div>
-      <div className=' mt-4 ml-10 p-2'>
-      <img className="w-[277px] h-[385px] place-self-auto" src={Newspic} />
+      <div className="text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
+        LimeFiber News and Stories
+      </div> 
+      {/* <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer', position: 'absolute', right: 0 }}>
+        &gt;
+      </div> */}
+      <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
+        <img className="w-[277px] h-[385px] place-self-auto" src={currentImage} alt="News Pic" />
+      </div>
+      <div className="mt-4 ml-20 items-center p-2">
+        {images.map((image, index) => (
+          <label key={index} className={`mx-1 cursor-pointer ${activeIndex === index ? 'active' : ''}`}>
+            <input
+              type="radio"
+              name="newsImage"
+              onChange={() => handleImageChange(index)}
+              checked={activeIndex === index}
+            />
+          </label>
+        ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default news
+export default News;
+
+
