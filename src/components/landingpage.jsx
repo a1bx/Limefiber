@@ -51,7 +51,7 @@ const Home = () => {
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
               </p>
-              <div className="w-[169px] h-[60px] justify-center place-items-center mt-2 relative">
+              <div className="w-[169px] h-[60px] place-self-center mt-2 relative">
                 <div className="w-[94px] left-[50px] top-[15px] absolute text-black text-lg font-semibold font-['Baloo Da 2'] leading-7">
                   Learn More
                 </div>
