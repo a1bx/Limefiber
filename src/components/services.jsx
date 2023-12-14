@@ -44,7 +44,7 @@ const Services = () => {
         </div>
 
         <div className="flex ">
-          <div className="flex gap-2md:gap-4 p-2 md:mt-24 md:mt-8 ml-5 md:ml-20 relative z-10">
+          <div className="flex gap-2 md:gap-4 p-2 md:mt-8 ml-5 md:ml-20 relative z-10">
             <button
               className="hidden md:block flex size-auto place-items-center mt-[200px] opacity-30"
               onClick={scrollLeft}
