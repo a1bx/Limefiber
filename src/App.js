@@ -16,7 +16,7 @@ function App() {
       <Value />
       <Services/>
       <About/>
-      {/* <News/> */}
+      <News/>
       <Contact/>
       <Footer/>
     </div>
