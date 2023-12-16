@@ -9,8 +9,9 @@ import People from '../assets/People1.png';
 // import People1 from '../assets/banner.svg';
 // import People2 from '../assets/banner2.svg';
 // import People3 from '../assets/banner3.svg';
-import Banner1 from '../assets/banner.svg'; // Import Banner1
-import Banner2 from '../assets/banner2.svg'; // Import Banner2
+import Banner1 from '../assets/banner.svg'; 
+import Banner2 from '../assets/banner2.svg'; 
+import Banner3 from '../assets/banner3.svg'; 
 
 const Home = () => {
   const [currentBanner, setCurrentBanner] = useState(Banner1);
@@ -69,8 +70,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="relative w-2/3 items-start">
-            <img className="w-auto h-auto relative" src={People} />
+          <div className="flex w-2/3 items-start">
+            <img className="w-auto h-auto" src={People} />
           </div>
         </div>
       </div>
@@ -85,7 +86,7 @@ const Home = () => {
           {/* <button onClick={handleToggleAutoChange}>
             {isAutoChangeEnabled ? 'Pause' : 'Resume'} Auto Change
           </button> */}
-          <div className="radio-buttons flex justify-center gap-2">
+          <div className="radio-buttons flex justify-center gap-2 mt-2">
             <label>
               <input
                 type="radio"
@@ -105,6 +106,24 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* <div className="hero-section relative h-screen bg-cover bg-center flex items-center text-white">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="text-center z-10">
+          <div className="w-[210px] text-white text-xl font-medium font-['Baloo Da 2'] capitalize leading-relaxed">
+            Get started with LimeFiber
+          </div>
+          <button className="w-[76px] px-6 py-3 border-white text-white font-normal font-['Baloo Da 2'] leading-tight">
+            Get Started
+            </button>
+        </div>
+        <div className="absolute inset-0">
+          <img
+            src={Banner3} // Replace with the actual path to your hero image
+            alt="Hero Background"
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div> */}
       <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-auto">
               <p className="text-black font-normal font-['Baloo Da 2'] text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
                 Our goal is to provide unlimited internet and offer a simple,
