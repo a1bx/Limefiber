@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState,useEffect} from 'react';
 import Learn from '../assets/learn.svg';
 import People from '../assets/People1.png';
 // import { Link } from 'react-router-dom';
@@ -6,9 +6,38 @@ import People from '../assets/People1.png';
 // import Arrow from '../assets/arrowdown.svg';
 // import Arrow1 from '../assets/arrowup.svg';
 // import { Navigate } from 'react-router-dom';
-import Banner from '../assets/banner.svg';
+// import People1 from '../assets/banner.svg';
+// import People2 from '../assets/banner2.svg';
+// import People3 from '../assets/banner3.svg';
+import Banner1 from '../assets/banner.svg'; // Import Banner1
+import Banner2 from '../assets/banner2.svg'; // Import Banner2
 
 const Home = () => {
+  const [currentBanner, setCurrentBanner] = useState(Banner1);
+  const [isAutoChangeEnabled, setIsAutoChangeEnabled] = useState(true);
+
+  useEffect(() => {
+    let bannerInterval;
+
+    if (isAutoChangeEnabled) {
+      bannerInterval = setInterval(() => {
+        setCurrentBanner((prevBanner) =>
+          prevBanner === Banner1 ? Banner2 : Banner1
+        );
+      }, 5000);
+    }
+
+    return () => clearInterval(bannerInterval);
+  }, [isAutoChangeEnabled]);
+
+  // const handleToggleAutoChange = () => {
+  //   setIsAutoChangeEnabled((prevValue) => !prevValue);
+  // };
+
+  const handleChangeBanner = (newBanner) => {
+    setCurrentBanner(newBanner);
+    setIsAutoChangeEnabled(false); // Stop auto-change when user manually changes the banner
+  };
   return (
     <>
       <div className="ml-2 h-[680px] p-4 hidden lg:block">
@@ -45,7 +74,37 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img src={Banner} className='block md:hidden rounded w-[95%] mt-10 h-[300px] mx-auto' />
+      {/* <img src={People1} className='block md:hidden rounded w-[95%] mt-10 h-[300px] mx-auto' /> */}
+      <div className="hero-section sm:hidden">
+        <img
+          src={currentBanner}
+          className="block md:hidden rounded w-[95%] mt-10 h-[300px] mx-auto"
+          alt="Banner"
+        />
+        <div className="controls">
+          {/* <button onClick={handleToggleAutoChange}>
+            {isAutoChangeEnabled ? 'Pause' : 'Resume'} Auto Change
+          </button> */}
+          <div className="radio-buttons flex justify-center gap-2">
+            <label>
+              <input
+                type="radio"
+                value={Banner1}
+                checked={currentBanner === Banner1}
+                onChange={() => handleChangeBanner(Banner1)}
+              />
+            </label>
+            <label>
+              <input
+                type="radio"
+                value={Banner2}
+                checked={currentBanner === Banner2}
+                onChange={() => handleChangeBanner(Banner2)}
+              />
+            </label>
+          </div>
+        </div>
+      </div>
       <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-auto">
               <p className="text-black font-normal font-['Baloo Da 2'] text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
                 Our goal is to provide unlimited internet and offer a simple,
