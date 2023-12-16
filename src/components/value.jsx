@@ -34,8 +34,8 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <div className="flex place-items-center">
-          <button className="ml-32 md:ml-20 px-4 py-2 place-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <div className="flex justify-center">
+          <button className="md:ml-20 px-4 py-2 place-self-center rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
           </div>
@@ -63,8 +63,8 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <div className="flex place-self-center">
-          <button className="ml-32 place-self-center md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <div className="flex justify-center">
+          <button className="flex place-self-center md:ml-20 px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
           </div>
@@ -92,9 +92,11 @@ const Value = () => {
             mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
             laoreet dolor nec imperdiet.
           </p>
-          <button className="ml-32 md:ml-20 place-self-center mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <div className='flex justify-center'>
+          <button className="md:ml-20 place-self-center mx-auto px-4 py-2 rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
+          </div>
         </div>
       </div>
 

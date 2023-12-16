@@ -113,20 +113,20 @@ const News = () => {
   };
 
   return (
-    <>
-      <div className="text-center text-zinc-500 text-[9px] font-normal font-['Baloo Da 2'] leading-7 tracking-[4.05px]">
+    <div className='sm:bg-lightgreen'>
+      <div className="sm:hidden text-center text-[9px] font-normal font-['Baloo Da 2'] leading-7 tracking-[4.05px] md:overflow-x-hidden w-screen mr-40 relative">
         BLOG & NEWS
       </div>
-      <div className="text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
+      <div className="sm:hidden text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
         LimeFiber News and Stories
       </div> 
       {/* <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer', position: 'absolute', right: 0 }}>
         &gt;
       </div> */}
       <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
-        <img className="w-[277px] h-[385px] place-self-auto" src={currentImage} alt="News Pic" />
+        <img className="w-[277px] h-[385px] ml-30" src={currentImage} alt="News Pic" />
       </div>
-      <div className="mt-4 ml-20 items-center p-2">
+      <div className="mt-4 ml-20 items-center p-2 sm:ml-40">
         {images.map((image, index) => (
           <label key={index} className={`mx-1 cursor-pointer ${activeIndex === index ? 'active' : ''}`}>
             <input
@@ -138,7 +138,7 @@ const News = () => {
           </label>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
