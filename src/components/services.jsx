@@ -119,7 +119,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-10 cursor-pointer relative flex items-center ml-4">
+        <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-10 cursor-pointer relative flex justify-center ml-4">
           See More Services and Products <AiOutlineRight />
         </div>
       </div>
