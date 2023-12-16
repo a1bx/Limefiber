@@ -123,10 +123,10 @@ const News = () => {
       {/* <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer', position: 'absolute', right: 0 }}>
         &gt;
       </div> */}
-      <div className="mt-4 ml-10 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
+      <div className="flex justify-center mt-4 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
         <img className="w-[277px] h-[385px] ml-30" src={currentImage} alt="News Pic" />
       </div>
-      <div className="mt-4 ml-20 items-center p-2 sm:ml-40">
+      <div className="mt-4 flex justify-center p-2 sm:ml-40">
         {images.map((image, index) => (
           <label key={index} className={`mx-1 cursor-pointer ${activeIndex === index ? 'active' : ''}`}>
             <input
