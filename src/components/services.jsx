@@ -9,13 +9,15 @@ const Services = () => {
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft -= 3;
+      const cardWidth = scrollRef.current.firstChild.clientWidth;
+      scrollRef.current.scrollLeft -= cardWidth;
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft += 3;
+      const cardWidth = scrollRef.current.firstChild.clientWidth;
+      scrollRef.current.scrollLeft += cardWidth;
     }
   };
 
@@ -27,7 +29,7 @@ const Services = () => {
       <img
         src={Ellipse13}
         alt=""
-        className="absolute top-1 md:top-16 left-1/2 w-[820px] h-[300px] md:h-[594px]"
+        className="absolute top-1 md:top-16 left-1/2 w-[820px] h-[300px]"
       />
       <div className=" ml-5 relative bg-lightgreen w-[100%] md:w-[90%] p-5  h-[610px] rounded-tr-[400px] md:rounded-bl-[400px]">
         <div className="text-center text-zinc-500 text-xs font-light font-['Baloo Da 2'] leading-7 tracking-[6.30px] p-0 md:p-0">
@@ -57,6 +59,7 @@ const Services = () => {
             >
               <AiOutlineRightCircle style={{ fontSize: "2em" }} />
             </button>
+            <div className="flex" ref={scrollRef}>
             <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105">
               <img
                 src={ServiceIcon1}
@@ -116,6 +119,7 @@ const Services = () => {
                 dui mi, bibendum eu erat id, ultricies semper metus. Nunc
                 dapibus laoreet dolor nec imperdiet.
               </p>
+            </div>
             </div>
           </div>
         </div>
