@@ -88,7 +88,7 @@ const Home = () => {
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="text-center z-10">
         <div className="w-[210px] text-white text-xl font-medium font-['Baloo Da 2'] capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
-            <button className="w-[90px] border-white text-white font-bold font-['Baloo Da 2'] leading-tight rounded-sm mt-10">
+            <button className="w-[90px] border py-3 text-white font-normal font-['Baloo Da 2'] leading-tight rounded-sm mt-10">
             Get Started
             </button>
         </div>
