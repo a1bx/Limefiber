@@ -76,16 +76,31 @@ const Home = () => {
         </div>
       </div>
       {/* <img src={People1} className='block md:hidden rounded w-[95%] mt-10 h-[300px] mx-auto' /> */}
-      <div className="hero-section sm:hidden">
+      {/* <div className="hero-section sm:hidden relative">
         <img
           src={currentBanner}
-          className="block md:hidden rounded w-[95%] mt-10 h-[300px] mx-auto"
+          className=" object-cover w-full h-full p-2 rounded-none"
           alt="Banner"
         />
-        <div className="controls">
-          {/* <button onClick={handleToggleAutoChange}>
-            {isAutoChangeEnabled ? 'Pause' : 'Resume'} Auto Change
-          </button> */}
+      </div> */}
+      
+      <div className="md:hidden hero-section relative h-[400px] bg-cover bg-center flex items-center text-white">
+        {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+        <div className="text-center z-10">
+        <div className="w-[210px] text-white text-xl font-medium font-['Baloo Da 2'] capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
+            <button className="w-[90px] border-white text-white font-bold font-['Baloo Da 2'] leading-tight rounded-sm mt-10">
+            Get Started
+            </button>
+        </div>
+        
+        <div className="absolute inset-0">
+        <img
+          src={currentBanner}
+          className="object-cover w-full h-full p-2 rounded"
+          alt="Banner"
+        />
+        </div>
+        <div className="relative mt-80 items-center">
           <div className="radio-buttons flex justify-center gap-2 mt-2">
             <label>
               <input
@@ -106,25 +121,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="hero-section relative h-screen bg-cover bg-center flex items-center text-white">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="text-center z-10">
-          <div className="w-[210px] text-white text-xl font-medium font-['Baloo Da 2'] capitalize leading-relaxed">
-            Get started with LimeFiber
-          </div>
-          <button className="w-[76px] px-6 py-3 border-white text-white font-normal font-['Baloo Da 2'] leading-tight">
-            Get Started
-            </button>
-        </div>
-        <div className="absolute inset-0">
-          <img
-            src={Banner3} // Replace with the actual path to your hero image
-            alt="Hero Background"
-            className="object-cover w-full h-full"
-          />
-        </div>
-      </div> */}
-      <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-auto">
+
+      
+      <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-2">
               <p className="text-black font-normal font-['Baloo Da 2'] text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
