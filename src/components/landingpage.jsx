@@ -1,17 +1,9 @@
 import {useState,useEffect} from 'react';
 import Learn from '../assets/learn.svg';
 import People from '../assets/People1.png';
-// import { Link } from 'react-router-dom';
-// import Ellipse1 from '../assets/ellipse1.svg';
-// import Arrow from '../assets/arrowdown.svg';
-// import Arrow1 from '../assets/arrowup.svg';
-// import { Navigate } from 'react-router-dom';
-// import People1 from '../assets/banner.svg';
-// import People2 from '../assets/banner2.svg';
-// import People3 from '../assets/banner3.svg';
 import Banner1 from '../assets/banner.svg'; 
-import Banner2 from '../assets/banner2.svg'; 
-import Banner3 from '../assets/banner3.svg'; 
+import Banner2 from '../assets/banner2.svg';
+import Banner3 from '../assets/banner3.svg';
 
 const Home = () => {
   const [currentBanner, setCurrentBanner] = useState(Banner1);
@@ -22,9 +14,15 @@ const Home = () => {
 
     if (isAutoChangeEnabled) {
       bannerInterval = setInterval(() => {
-        setCurrentBanner((prevBanner) =>
-          prevBanner === Banner1 ? Banner2 : Banner1
-        );
+        setCurrentBanner((prevBanner) => {
+          if (prevBanner === Banner1) {
+            return Banner2;
+          } else if (prevBanner === Banner2) {
+            return Banner3;
+          } else {
+            return Banner1;
+          }
+        });
       }, 5000);
     }
 
@@ -44,7 +42,7 @@ const Home = () => {
       <div className="ml-2 h-[680px] p-4 hidden lg:block">
         <link rel="home" href="" />
         {/* <Navigate to='/home' /> */}
-        <div className="flex flex-col w-full lg:flex-row mt-10">
+        <div className="flex flex-col w-full lg:flex-row">
           <div>
             <div className="text text-5xl font-semibold font-['Baloo Da 2'] leading-[81px] mb-2 p-10 ml-10">
               We provide Home Fiber Internet, quick and <br></br>reliable!
@@ -65,13 +63,14 @@ const Home = () => {
                   <img
                     className="w-[30px] h-[60px] left-0 top-0 absolute"
                     src={Learn}
+                    alt='Learn More'
                   />
                 </div>
               </div>
             </div>
           </div>
           <div className="flex w-2/3 items-start">
-            <img className="w-auto h-auto" src={People} />
+            <img className="w-auto h-auto" src={People} alt='' />
           </div>
         </div>
       </div>
@@ -84,11 +83,11 @@ const Home = () => {
         />
       </div> */}
       
-      <div className="md:hidden hero-section relative h-[400px] bg-cover bg-center flex items-center text-white">
+      <div className="lg:hidden hero-section relative h-[400px] bg-cover bg-center flex items-center text-white">
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="text-center z-10">
         <div className="w-[210px] text-white text-xl font-medium font-['Baloo Da 2'] capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
-            <button className="w-[90px] border py-3 text-white font-normal font-['Baloo Da 2'] leading-tight rounded-sm mt-10">
+            <button className="w-[90px] border py-3 font-normal font-['Baloo Da 2'] leading-tight rounded-sm mt-10">
             Get Started
             </button>
         </div>
@@ -100,8 +99,8 @@ const Home = () => {
           alt="Banner"
         />
         </div>
-        <div className="relative mt-80 items-center">
-          <div className="radio-buttons flex justify-center gap-2 mt-2">
+        <div className="mt-80 flex items-center justify-center absolute ml-40">
+          <div className="radio-buttons flex gap-2 mt-2">
             <label>
               <input
                 type="radio"
@@ -116,6 +115,14 @@ const Home = () => {
                 value={Banner2}
                 checked={currentBanner === Banner2}
                 onChange={() => handleChangeBanner(Banner2)}
+              />
+            </label>
+            <label>
+              <input
+                type="radio"
+                value={Banner3}
+                checked={currentBanner === Banner3}
+                onChange={() => handleChangeBanner(Banner3)}
               />
             </label>
           </div>
@@ -136,6 +143,7 @@ const Home = () => {
                   <img
                     className="w-[30px] h-[60px] left-0 top-0 absolute"
                     src={Learn}
+                    alt='Learn More'
                   />
                 </div>
               </div>
