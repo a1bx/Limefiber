@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Newspic1 from '../assets/newsimage1.svg';
+import Newspic1 from '../assets/newsPic1.svg';
 import Newspic2 from '../assets/news2.svg';
 import Newspic3 from '../assets/news3.svg';
 import ArrowRight from '../assets/arrowright.svg';
