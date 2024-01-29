@@ -25,6 +25,7 @@ const News = () => {
       setCurrentImageIndex(0);
     }
   };
+
     const images = [Newspic1, Newspic2, Newspic3];
     const [currentImage, setCurrentImage] = useState(images[0]);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -70,17 +71,16 @@ const News = () => {
         {/* <div className="flex justify-center sm:ml-[500px] mt-4 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
          <img className="w-[404px] h-[582px] ml-30" src={currentImage} alt="News Pic" />
        </div> */}
-          <div className="flex justify-center sm:ml-[500px] relative h-[570px] p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
+          <div className="flex justify-center sm:ml-[500px] relative h-[570px] p-4" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
              <img className="w-[380px] h-[582px] left-0 top-0 flex justify-center" src={currentImage} alt='news pic' />
                <div className="w-12 left-[241px] top-[500px] absolute">
                 <div className="w-12 h-12 left-0 top-0 absolute bg-red" />
                 <img className="w-[30.09px] h-[25.09px] top-2 left-2 relative" src={Arrow} alt='' />
                </div>
-               <div className="w-[217px] h-[130px] left-[24px] top-[428px] absolute">
-        {/* Wrap the clickable section in a div with onClick event */}
+               <div className="w-[217px] h-[130px] left-[24px] top-[428px] absolute mb-">
         <button
           onClick={handleExpansionClick}
-          className="w-[217px] h-[130px] left-0 top-0 absolute bg-white bg-opacity-70 backdrop-blur-[3px]"
+          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
         >
           <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
             <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
