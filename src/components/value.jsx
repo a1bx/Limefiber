@@ -9,7 +9,7 @@ import Map from '../assets/map.svg';
 
 const Value = () => {
   return (
-    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center">
+    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center md:justify-center">
       <div className="text-center text-zinc-500 text-xs font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mb-2">
         VALUE PROPOSITION
       </div>
