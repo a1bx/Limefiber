@@ -67,11 +67,12 @@ const Navbar = () => {
                   </div>
            </div>  
            <div className="w-[188px] h-[49px] md:ml-[512px] top-[650px] p-6 ml-3 md:top-5 md:p-2 absolute">
-            <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-7 cursor-pointer">Log in</button>
-            <button className="w-[119px] h-[49px] left-[69px] top-0 absolute bg-green rounded-[10px]">
-            {/* <div className="w-[119px] h-[49px] left-0 top-0 absolute " /> */}
-            <p className="left-[30px] top-[10px] absolute text-white text-lg font-normal font-['Baloo Da 2'] leading-7 cursor-pointer">Sign up</p>
-            </button>
+            <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-7 md:cursor-pointer">Log in</button>
+            {/* ">
+            <div className="w-[119px] h-[49px] left-0 top-0 absolute " />
+            <button className="left-[30px] top-[10px] absolute text-white text-lg font-normal font-['Baloo Da 2'] leading-7">Sign up</button>
+            </div> */}
+            <button className="w-[119px] h-[49px] left-[69px] top-0 absolute bg-green cursor-pointer rounded-[10px] text-white">sign up</button>
             </div>
       </div>
       <div className="w-screen hidden h-[49px] md:block relative">
