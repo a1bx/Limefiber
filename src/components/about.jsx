@@ -33,17 +33,17 @@ const About = () => {
         <div className="w-[470px] h-[237px] relative gap-[30px]">
           <div className="w-[470px] h-[237px] left-0 top-0 absolute opacity-10 rounded-[10px] border-2 border-white" />
           <img
-            className="w-[70px] h-[70px] left-[350px] md:left-[35px] top-[36px] absolute rounded-[10px]"
+            className="w-[70px] h-[70px] left-[300px] md:left-[35px] top-[36px] absolute rounded-[10px]"
             src={User2}
             alt=""
           />
-          <div className="h-[179px] md:left-[135px] left-[35px] top-[35px] absolute">
-            <p className="w-[250px] left-0 top-0 absolute text-neutral-500 text-[14px] font-normal font-['Baloo Da 2'] leading-7">
+          <div className="h-[179px] md:left-[135px] left-[35px] p-4 top-[35px] absolute">
+            <p className="w-[230px] left-0 top-0 absolute text-[14px] font-normal font-['Baloo Da 2'] leading-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
               laoreet dolor nec imperdiet.
             </p>
-            <p className="left-0 top-[145px] absolute opacity-30 text-neutral-500 text-xs font-bold font-['Baloo Da 2'] uppercase leading-relaxed tracking-widest">
+            <p className="left-0 mt-4 top-[145px] absolute opacity-30 text-xs font-bold font-['Baloo Da 2'] uppercase leading-relaxed tracking-widest">
               USER123456
             </p>
           </div>
