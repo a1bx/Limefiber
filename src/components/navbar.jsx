@@ -1,127 +1,90 @@
-import React,{useState} from 'react'
-import Logo from '../assets/logo.png';
-import NavLinks from './navlinks';
-import { Link } from "react-scroll";
-import ProfileIcon from '../assets/profileIcon.svg';
+import React, { useState } from 'react';
 import Menu from '../assets/menu.svg';
+import Logo from '../assets/logo.png';
+import ProfileIcon from '../assets/profileIcon.svg';
+import Logout from '../assets/logout.svg';
+import Search from '../assets/search.svg';
+import Account from '../assets/account.svg';
 
 const Navbar = () => {
-    const [nav,setNav] = useState(false);
-    const links = [
-        {
-          id: '/',
-          link: "Home",
-        },
-        {
-          id: 'Products',
-          link: "Products",
-        },
-        {
-          id: 3,
-          link: "About Us",
-        },
-        {
-          id: 4,
-          link: "Contacts",
-        },
-      ];
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="md:ml-20 ml-10 mx-auto flex justify-between items-center max-w-full overflow-x-hidden">
-      <img src={Logo} alt="" className="w-[130px] md:w-[150px] mt-4" />
-      <div className="ml-[300px] gap-8 mx-auto flex justify-between items-center hidden md:block">
-        <ul className="flex space-x-6">
-          {links.map(({ id, link }) => (
-            <li key={id} className="hover:text-red cursor-pointer">
-              <Link to={`/${link}`}>{link}</Link>
-            </li>
-          ))}
-        </ul>
-        <div onClick={() => setNav(!nav)} className="hover:text-red"></div>
-        {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-            {links.map(({ id, link }) => (
-              <NavLinks
-                key={id}
-                link={link}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
-              />
-            ))}
-          </ul>
-        )}
+    <div className="p-4 md:flex ">
+      <div className="container flex relative items-center justify-between gap-10">
+        <div className="flex items-center">
+          <img src={Logo} alt=""className='w-[82px] h-[35px] md:w-[292px] md:h-[130px] md:ml-10 md:p-2 md:mr-[100px] cursor-pointer relative' />
+          
+        </div>
+        <img src={ProfileIcon} alt="" className='md:hidden'/>
+        <div className="md:hidden flex gap-10">
+          <button
+            className="text-white focus:outline-none"
+            onClick={toggleMenu}
+          >
+            <img src={Menu} alt="" />
+          </button>
+        </div>
+        </div>
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } lg:flex lg:items-center lg:w-auto`}
+        ><div className="hidden text-red text-lg font-normal font-['Baloo Da 2'] leading-7">Home</div>
+          <div className="md:hidden w-80 h-[692px] relative bg-white rounded-[10px]">
+              <div className="w-72 h-[0px] left-[16px] top-[480px] absolute border border-zinc-300"></div>
+                 <div className="w-[129px] h-[460px] left-[16px] top-[119px] absolute">
+                  <div className="left-0 top-[50px] absolute">
+                    <a href="#products" className="text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">Products</a>
+                    </div>
+                    <div className="left-0 top-[100px] absolute">
+                      <a href="about" className="text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">About</a>
+                      </div>
+                    <div className="left-0 top-[150px] absolute text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">
+                      <a href="blog">Blog</a></div>
+                    <div className="left-0 top-[196px] absolute text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">Help</div>
+                    <div className="left-0 top-[246px] absolute text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">Contact</div>
+                    <div className="left-0 top-[296px] absolute text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">Search</div>
+                    <div className="left-0 top-0 absolute text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed">Home</div>
+                    <div className="w-[129px] h-[26px] left-0 top-[385px] absolute">
+                      <div className="left-[30px] top-0 absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-relaxed">My account</div>
+                         <img className="w-5 h-5 left-[-0px] top-[1px] absolute border border-white" src={Account} alt='' />
+                    </div>
+                       <div className="w-[92px] h-[26px] left-0 top-[434px] absolute">
+                        <div className="left-[30px] top-0 absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-relaxed">Logout</div>
+                        <img className="w-[18px] h-[18px] left-0 top-[4px] absolute border border-white" src={Logout} alt=''/>
+                      </div>
+                 </div>
+                 <div className="w-[53.76px] h-4 left-[250px] top-[16px] absolute"></div>
+                 <div className="w-72 h-8 left-[16px] top-[48px] absolute">
+                  <div className="w-72 h-8 left-0 top-0 absolute bg-gray rounded" />
+                  <div className="left-[30px] top-[6px] absolute text-neutral-500 text-xs font-normal font-['Baloo Da 2'] leading-tight">Search</div>
+                  <img className="w-3 h-3 left-[10px] top-[10px] absolute" src= {Search} alt='' />
+                  </div>
+           </div>  
+           <div className="w-[188px] h-[49px] md:ml-[512px] top-[650px] p-6 ml-3 md:top-5 md:p-2 absolute">
+            <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-7 cursor-pointer">Log in</button>
+            <button className="w-[119px] h-[49px] left-[69px] top-0 absolute bg-green rounded-[10px]">
+            {/* <div className="w-[119px] h-[49px] left-0 top-0 absolute " /> */}
+            <p className="left-[30px] top-[10px] absolute text-white text-lg font-normal font-['Baloo Da 2'] leading-7 cursor-pointer">Sign up</p>
+            </button>
+            </div>
       </div>
-      <div className="mr-10 hidden md:block">
-        <button className="px-4 py-2 rounded-md hover:bg-green hover-text-white">
-          Log in
-        </button>
-        <button className="px-4 py-2 rounded-md bg-green hover:bg-green hover-text-white text-white">
-          Sign up
-        </button>
-      </div>
-      <div className="mr-10 md:hidden flex gap-10">
-        <img src={ProfileIcon} alt="" />
-        <img src={Menu} alt="" />
-        {/* <svg
-          id="Layer_1"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          width="24"
-          height="24"
-          color="#000000"
-        >
-          <defs>
-            <style>{`.cls-6374f8d9b67f094e4896c670-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}`}</style>
-          </defs>
-          <circle
-            className="cls-6374f8d9b67f094e4896c670-1"
-            cx="12"
-            cy="7.25"
-            r="5.73"
-          ></circle>
-          <path
-            className="cls-6374f8d9b67f094e4896c670-1"
-            d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"
-          ></path>
-        </svg> */}
-        {/* <svg
-          id="Layer_1"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          width="24"
-          height="24"
-          color="#000000"
-        >
-          <defs>
-            <style>{`.cls-6374f8d9b67f094e4896c63e-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}`}</style>
-          </defs>
-          <line
-            className="cls-6374f8d9b67f094e4896c63e-1"
-            x1="0.5"
-            y1="2.42"
-            x2="23.5"
-            y2="2.42"
-          ></line>
-          <line
-            className="cls-6374f8d9b67f094e4896c63e-1"
-            x1="0.5"
-            y1="12"
-            x2="23.5"
-            y2="12"
-          ></line>
-          <line
-            className="cls-6374f8d9b67f094e4896c63e-1"
-            x1="0.5"
-            y1="21.58"
-            x2="23.5"
-            y2="21.58"
-          ></line>
-        </svg> */}
-      </div>
+      <div className="w-screen hidden h-[49px] md:block relative">
+    <div className="h-[29px] left-0 top-[15px] absolute">
+        <div className="left-0 top-0 absolute hover:text-red cursor-pointer text-lg font-normal font-['Baloo Da 2'] leading-7">Home</div>
+        <div className="left-[87px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-['Baloo Da 2'] leading-7">Services</div>
+        <div className="left-[199px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-['Baloo Da 2'] leading-7">About Us</div>
+        <div className="left-[307px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-['Baloo Da 2'] leading-7">Contacts</div>
+    </div>
+     
+</div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
