@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="font-['Baloo Da 2'] leading-[27px] hover:text-red ">
               TERMS OF SERVICES
             </div>
-            <div className="w-[369px] h-[32.17px] top-[200px] text-base font-normal font-['Baloo Da 2'] leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
+            <div className="md:hidden w-[369px] h-[32.17px] top-[200px] text-base font-normal font-['Baloo Da 2'] leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
           <div className="mt-20 flex justify-center gap-5">
             <img
@@ -35,7 +35,7 @@ const Footer = () => {
               alt=""
               className="w-32 h-14 p-2 absolute md:relative top-52 md:top-0 right-10 "
             />
-            <div className="hidden w-[369px] h-[32.17px] left-[400px] text-base font-normal font-['Baloo Da 2'] leading-relaxed md:absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
+            <div className="hidden w-[369px] h-[32.17px] left-[400px] text-base font-normal font-['Baloo Da 2'] leading-relaxed md:flex items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
         </div>
         <div>
