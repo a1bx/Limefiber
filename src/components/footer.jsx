@@ -5,13 +5,19 @@ import IconColor from "../assets/Icon color.svg";
 const Footer = () => {
   return (
     <div className="mt-10 h-[480px] md:h-[200px] max-w-full overflow-x-hidden">
-      <div
-        className="w-[85%] h-[0px] mx-auto"
-        style={{ borderColor: "#707070", borderWidth: "0.5px" }}
-      ></div>
-      <footer className="w-[85%] mx-auto p-2 text-base-content rounded flex flex-col md:flex-row  justify-between p-5 relative">
+      
+      <div className="md:w-[1380px] h-[0px] border border-gray md:ml-14 ml-10 mr-8"></div>
+      <div className="w-72 h-8 absolute mt-8 ml-12 mr-10 sm:hidden">
+    <div className="w-72 h-8 left-0 top-0 absolute bg-white rounded border border-green" />
+    <div className="left-[90px] top-[6px] absolute text-black text-xs font-normal font-['Baloo Da 2'] leading-tight">Contact LimeFiber</div>
+</div>
+      <footer className="w-[85%] mx-auto text-base-content rounded flex flex-col md:flex-row  justify-between p-5 relative">
         <div className="flex flex-row md:flex-col">
           <div className="flex flex-col md:flex-row gap-2 mt-32 md:mt-0 md:gap-10 absolute p-0 md:p-5 font-light">
+          <div className="w-[271px] left-[17px] mb-4 flex gap-2 sm:hidden">
+          <div className="w-[13px] h-[13px] rounded-sm border border-neutral-500" />
+              <span className="text-black text-xs font-normal font-['Baloo Da 2'] leading-tight">I agree to the website's terms and conditions</span>
+            </div>
             <a href="contact" className="link link-hover hover:text-red">
               CONTACT
             </a>
@@ -22,29 +28,25 @@ const Footer = () => {
               TERMS OF SERVICES
             </div>
           </div>
-          <div className="mt-20 flex items-center gap-5">
+          <div className="mt-20 flex justify-center gap-5">
             <img
               src={Logo}
               alt=""
-              className="w-[150px] h-[56.25px] absolute md:relative top-52 md:top-0 right-10"
+              className="w-32 h-14 p-2 absolute md:relative top-52 md:top-0 right-10 "
             />
-            <div
-              className="w-[369px] h-[32.17px] text-sm font-normal font-['Baloo Da 2'] ml-0 md:ml-5 md:relative absolute top-96 md:top-0"
-              style={{ color: "#707070" }}
-            >
-              © 2023 LimeFiber. All rights reserved.
-            </div>
+            <div className="w-[369px] h-[32.17px]  top-[380px] text-base font-normal font-['Baloo Da 2'] leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
         </div>
         <div>
           <div className="mr-10 flex items-center">
             <div
-              className="text-base font-normal font-['Baloo Da 2'] leading-[27px] w-[100%] h-[66px] border-bottom border-black absolute md:relative ml-0 md:ml-10  "
+              className="text-base font-normal font-['Baloo Da 2'] leading-[27px] w-[100%] border-bottom border-black absolute md:relative ml-0 md:ml-10  "
               style={{ color: "#707070" }}
             >
               Subscribe to our newsletters
               <img src={IconColor} alt="" className="ml-60 bottom-2 relative" />
             </div>
+            
             <div
               className="w-[90%] md:w-[320px] h-[0px] mt-10 ml-0 md:ml-10 absolute"
               style={{ borderColor: "#111", borderWidth: "0.5px" }}
