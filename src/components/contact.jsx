@@ -6,7 +6,7 @@ import Ellipse16 from "../assets/ellipse16.svg";
 const contact = () => {
   return (
     <div className="flex flex-col md:flex-row mt-5 md:mt-[-60px] relative">
-      <div className="flex gap-3 p-4 absolute top-40 md:top-0 mt-2 mb-5 md:mt-0 md:relative ml-10">
+      <div className="flex gap-3 p-4 absolute top-40 md:top-0 mt-20 mb-2 md:mt-0 md:relative">
         <img
           src={Ellipse16}
           alt=""
@@ -23,7 +23,7 @@ const contact = () => {
           alt=""
         />
       </div>
-      <div className="md:w-1/2 w-[100%] p-8 md:mt-20 text-center md:text-left">
+      <div className="md:w-1/2 w-[100%] p-8 md:mt-20 text-center md:text-left mt-4 mb-6">
         <div className="mb-96 md:mb-0">
           <div className="text-sm mt-10 font-light font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
             SUPPORT & CONTACT
@@ -38,17 +38,17 @@ const contact = () => {
             </span>
           </div>
         </div>
-        <div className="md:mt-20 mt-10 md:w-[515px] w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
+        <div className="md:mt-20 md:w-[515px] w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
         </div>
-        <div className="w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
+        <div className="w-[100%] h-[82px] p-2 text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
         </div>
-        <button className="w-[207px] h-[66px] bg-green text-white rounded-[10px] mt-4">
+        <button className="w-[207px] h-[66px] bg-green text-white rounded-[10px] mt-10">
           Explore more
         </button>
       </div>
