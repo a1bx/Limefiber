@@ -4,12 +4,12 @@ import IconColor from "../assets/Icon color.svg";
 
 const Footer = () => {
   return (
-    <div className="mt-10 h-[480px] md:h-[200px] max-w-full overflow-x-hidden">
+    <div className="mt-10 h-[400px] md:h-[200px] max-w-full overflow-x-hidden">
       
       <div className="md:w-[1380px] h-[0px] border border-gray md:ml-14 ml-10 mr-8"></div>
       <div className="w-72 h-8 absolute mt-8 ml-12 mr-10 sm:hidden">
     <div className="w-72 h-8 left-0 top-0 absolute bg-white rounded border border-green" />
-    <div className="left-[90px] top-[6px] absolute text-black text-xs font-normal font-['Baloo Da 2'] leading-tight">Contact LimeFiber</div>
+    <div className="left-[90px] top-[6px] absolute text-black text-xs font-normal font-['Baloo Da 2'] leading-tight hover:text-white hover:bg-green">Contact LimeFiber</div>
 </div>
       <footer className="w-[85%] mx-auto text-base-content rounded flex flex-col md:flex-row  justify-between p-5 relative">
         <div className="flex flex-row md:flex-col">
@@ -35,7 +35,7 @@ const Footer = () => {
               alt=""
               className="w-32 h-14 p-2 absolute md:relative top-52 md:top-0 right-10 "
             />
-            <div className="w-[369px] h-[32.17px] hidden left-[400px] text-base font-normal font-['Baloo Da 2'] leading-relaxed md:absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
+            <div className="hidden w-[369px] h-[32.17px] left-[400px] text-base font-normal font-['Baloo Da 2'] leading-relaxed md:absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
         </div>
         <div>
