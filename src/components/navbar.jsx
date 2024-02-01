@@ -61,8 +61,11 @@ const Navbar = () => {
                  </div>
                  <div className="w-[53.76px] h-4 left-[250px] top-[16px] absolute"></div>
                  <div className="w-72 h-8 left-[16px] top-[48px] absolute">
-                  <div className="w-72 h-8 left-0 top-0 absolute bg-gray rounded" />
-                  <div className="left-[30px] top-[6px] absolute text-neutral-500 text-xs font-normal font-['Baloo Da 2'] leading-tight">Search</div>
+                  {/* <div className="w-72 h-8 left-0 top-0 absolute bg-gray rounded" /> */}
+                  <input className="left-[30px] w-72 h-8 top-[6px] absolute text-sm font-normal font-['Baloo Da 2'] leading-tight border-none bg-gray rounded"
+                  type='text'
+                  placeholder='Search'
+                   />
                   <img className="w-3 h-3 left-[10px] top-[10px] absolute" src= {Search} alt='' />
                   </div>
            </div>  
