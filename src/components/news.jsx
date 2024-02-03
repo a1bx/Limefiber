@@ -73,14 +73,14 @@ const News = () => {
        </div> */}
           <div className="flex justify-center sm:ml-[500px] relative h-[570px] p-4" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
              <img className="w-[380px] h-[582px] left-0 top-0 flex justify-center" src={currentImage} alt='news pic' />
-               <div className="w-12 left-[241px] top-[500px] absolute">
+               <div className="w-12 left-[241px] top-[510px] absolute">
                 <div className="w-12 h-12 left-0 top-0 absolute bg-red" />
                 <img className="w-[30.09px] h-[25.09px] top-2 left-2 relative" src={Arrow} alt='' />
                </div>
-               <div className="w-[217px] h-[130px] left-[24px] top-[428px] absolute mb-">
+               <div className="w-[210px] h-[130px] left-[24px] top-[428px] absolute mb-">
         <button
           onClick={handleExpansionClick}
-          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
+          className="w-[217px] h-[130px] left-0 top-0 mb-4 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
         >
           <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
             <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
@@ -136,7 +136,7 @@ const News = () => {
               key={index}
               className={`w-full h-[${
                 index === currentImageIndex ? 380 : 300
-              }px] p-4 mt-5 cursor-pointer`}
+              }px] p-4 mt-8 cursor-pointer`}
               src={image}
               alt={`News ${index + 1}`}
               style={{
@@ -152,7 +152,36 @@ const News = () => {
             onClick={nextImage}
             className="cursor-pointer flex mr-20"
           />
+          {/* <div className="w-[217px] h-[100px] absolute top-80 right-[695px]">
+          <div className="w-12 h-12 bg-red" />
+    <div className="w-[217px] h-[100px] left-0 top-0 absolute bg-white bg-opacity-70 backdrop-blur-[3px]" />
+    <div className="w-[172px] h-6 left-[32px] absolute justify-start items-center gap-2 inline-flex">
+        <div className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</div>
+        <div className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</div>
+    </div>
+    <div className="left-[32px] top-[64px] absolute text-neutral-700 text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</div>
+    <div className="w-12 h-12 bg-red" />
+</div> */}
+         
+         <div className="w-12 left-[215px] top-[360px] absolute">
+                <div className="w-12 h-12 left-0 top-0 absolute bg-red" />
+                <img className="w-[30.09px] h-[25.09px] top-2 left-2 relative" src={Arrow} alt='' />
+               </div>
+          <div className="w-[217px] h-[130px] left-0 top-[282px] absolute right-[100px]">
+            <button
+          onClick={handleExpansionClick}
+          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
+             >
+          <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
+            <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
+            <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</p>
+          </div>
+          <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</p>
+        </button>
+         </div>
+         
         </div>
+        
     </div>
   </div>
   );
