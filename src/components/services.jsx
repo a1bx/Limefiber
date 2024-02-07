@@ -46,7 +46,7 @@ const Services = () => {
         </div>
 
         <div className="flex ">
-          <div className="flex gap-2 md:gap-4 p-2 md:mt-8 ml-5 md:ml-20 relative z-10">
+          <div className="flex gap-2 md:gap-4 p-2 md:mt-8 ml-2 md:ml-20 relative z-10">
             <button
               className="hidden md:block  size-auto place-items-center mt-[200px] opacity-30"
               onClick={scrollLeft}
@@ -54,12 +54,12 @@ const Services = () => {
               <AiOutlineLeftCircle style={{ fontSize: "2em" }} />
             </button>
             <button
-              className="hidden md:block  size-auto place-items-center mt-[200px]"
+              className="hidden md:block size-auto place-items-center mt-[200px]"
               onClick={scrollRight}
             >
               <AiOutlineRightCircle style={{ fontSize: "2em" }} />
             </button>
-            <div className="flex" ref={scrollRef}>
+            <div className="relative flex scroll-smooth p-2" ref={scrollRef}>
             <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105">
               <img
                 src={ServiceIcon1}
@@ -123,9 +123,10 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-10 cursor-pointer relative flex justify-center ml-4">
-          See More Services and Products <AiOutlineRight />
+        <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-8 cursor-pointer relative flex justify-center ml-4">
+          See More Services and Products <AiOutlineRight className='mt-2'/>
         </div>
+        
       </div>
     </div>
   );
