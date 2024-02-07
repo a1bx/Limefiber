@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="about" className="link link-hover hover:text-red">
               ABOUT US
             </a>
-            <div className="font-['Baloo Da 2'] leading-[27px] hover:text-red ">
+            <div className="font-['Baloo Da 2'] leading-[27px] hover:text-red cursor-pointer">
               TERMS OF SERVICES
             </div>
             <div className="md:hidden w-[369px] h-[32.17px] top-[200px] text-base font-normal font-['Baloo Da 2'] leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
@@ -56,7 +56,7 @@ const Footer = () => {
           <nav className="max-w-[320] mt-10 flex md:justify-end relative">
             <div className="flex gap-5 text-gray-900 absolute md:relative top-40 md:top-0">
               <p className="block md:hidden">Socials! -------</p>
-              <a>
+              <a href="https://www.youtube.com/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -70,7 +70,7 @@ const Footer = () => {
                   ></path>
                 </svg>
               </a>
-              <a>
+              <a href="facebook.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -83,7 +83,7 @@ const Footer = () => {
                   ></path>
                 </svg>
               </a>
-              <a>
+              <a href="https://www.instagram.com/">
                 <svg
                   id="Layer_1"
                   data-name="Layer 1"
