@@ -101,11 +101,11 @@ const Value = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4 p-4 md:mt-10 relative max-w-full overflow-hidden">
-        <div className="bg-white rounded p-2 md:p-10 ml-2 md:ml-10">
+        <div className="bg-white w-screen rounded p-2 md:p-10 ml-2 md:ml-10">
           <div className="text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
             COVERAGE
           </div>
-          <div className="text-[25px] font-medium font-['Baloo Da 2'] leading-loose">
+          <div className="w-85% wrap-text text-[20px] font-bold font-['Baloo Da 2'] leading-loose">
             Check your Home Fiber Coverage
           </div>
           <div className="w-[322.05px] h-[131.77px] text-black text-opacity-60 text-xl font-normal font-['Baloo Da 2'] leading-relaxed mt-4">
