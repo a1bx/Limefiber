@@ -10,12 +10,12 @@ const contact = () => {
         <img
           src={Ellipse16}
           alt=""
-          className="absolute w-3/4 md:w-[459px] md:h-[700px] md:left-10 ml-10 top-8 md:top-14"
+          className="hidden sm:block absolute w-3/4 sm:w-[60vh] sm:h-[80vh] md:left-10 ml-14 top-8 md:top-14"
         />
         <img
           src={Vector9}
           alt=""
-          className=" w-3/4 md:w-[550px] md:h-[500px] mt-10 ml-5 md:ml-20 top-5 md:top-20 absolute"
+          className=" w-3/4 md:w-[550px] md:h-[500px] mt-10 ml-6 md:ml-20 top-5 md:top-20 absolute"
         />
         <img
           className="w-5/6 md:w-[780.95px] md:h-[770.92px] relative"
