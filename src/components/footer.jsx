@@ -7,8 +7,8 @@ const Footer = () => {
     <div className="h-[60vh] md:h-[200px] max-w-full overflow-x-hidden">
       
     <div className="w-full md:w-[1380px] h-[0px] border border-gray md:ml-14 mr-8">
-    <div className="h-10 relative mt-4 ml-12 mr-10 sm:hidden left-0 top-0 bg-white rounded border border-green">
-        <div className="left-[90px] top-[6px] absolute text-black text-xs font-normal font-['Baloo Da 2'] leading-tight hover:text-white hover:bg-green">
+    <div className="h-10 relative mt-8 ml-12 mr-10 sm:hidden left-0 top-0 bg-white rounded border border-green">
+        <div className="left-[90px] top-[6px] absolute p-1 text-black text-xs font-normal font-['Baloo Da 2'] leading-tight hover:text-white hover:bg-green">
       Contact LimeFiber
       </div>
       </div>
