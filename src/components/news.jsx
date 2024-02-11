@@ -58,7 +58,7 @@ const News = () => {
             </div>
             <div className="sm:hidden text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
         LimeFiber News and Stories
-            </div> 
+            </div>
           </div>
           <div className="hidden sm:flex ml-10 mt-4 w-[368px] ml:10 text-base font-['Baloo Da 2'] leading-normal">LimeFiber expands operations in Northern Kenya,  Western Kenya and more!</div>
           <div className='hidden sm:flex sm:ml-10'>
@@ -69,15 +69,15 @@ const News = () => {
         </div>
         <div className='sm:hidden'>
         {/* <div className="flex justify-center sm:ml-[500px] mt-4 p-2" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
-         <img className="w-[404px] h-[582px] ml-30" src={currentImage} alt="News Pic" />
+        <img className="w-[404px] h-[582px] ml-30" src={currentImage} alt="News Pic" />
        </div> */}
           <div className="flex justify-center sm:ml-[500px] relative h-[570px] p-4" onClick={() => handleSwipe('next')} style={{ cursor: 'pointer' }}>
-             <img className="w-[380px] h-[582px] left-0 top-0 flex justify-center" src={currentImage} alt='news pic' />
-               <div className="w-12 left-[241px] top-[510px] absolute">
+            <img className="w-[380px] h-[582px] left-0 top-0 flex justify-center" src={currentImage} alt='news pic' />
+              <div className="w-12 left-[241px] top-[510px] absolute">
                 <div className="w-12 h-12 left-0 top-0 absolute bg-red" />
                 <img className="w-[30.09px] h-[25.09px] top-2 left-2 relative" src={Arrow} alt='' />
-               </div>
-               <div className="w-[210px] h-[130px] left-[24px] top-[428px] absolute mb-">
+              </div>
+              <div className="w-[210px] h-[130px] left-[24px] top-[428px] absolute mb-">
         <button
           onClick={handleExpansionClick}
           className="w-[217px] h-[130px] left-0 top-0 mb-4 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
@@ -90,24 +90,24 @@ const News = () => {
         </button>
       </div>
           </div>
-       <div className="mt-8 flex justify-center p-2 sm:ml-40">
-         {images.map((image, index) => (
-           <label key={index} className={`mx-1 cursor-pointer ${activeIndex === index ? 'active' : ''}`}>
-             <input
-               type="radio"
-               name="newsImage"
-               onChange={() => handleImageChange(index)}
-               checked={activeIndex === index}
-             />
-             <span
+      <div className="mt-8 flex justify-center p-2 sm:ml-40">
+        {images.map((image, index) => (
+          <label key={index} className={`mx-1 cursor-pointer ${activeIndex === index ? 'active' : ''}`}>
+            <input
+              type="radio"
+              name="newsImage"
+              onChange={() => handleImageChange(index)}
+              checked={activeIndex === index}
+            />
+            <span
                   className={`indicator [${
                     index === currentImage ? 277:385}px]"bg-red" : ""
                   }`}
                 ></span>
             </label>
-               ))}
+              ))}
         </div>
-           <div className='sm:hidden flex justify-center'>
+          <div className='sm:hidden flex justify-center'>
           <button className="w-[101px] bg-green text-white sm:px-4 rounded-md hover:bg-green hover:text-white mt-8 py-4">
             Learn more
           </button>
@@ -162,24 +162,22 @@ const News = () => {
     <div className="left-[32px] top-[64px] absolute text-neutral-700 text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</div>
     <div className="w-12 h-12 bg-red" />
 </div> */}
-         
-         <div className="w-12 left-[215px] top-[360px] absolute">
+        <div className="w-12 left-[20vh] top-[46vh] absolute cursor-pointer">
                 <div className="w-12 h-12 left-0 top-0 absolute bg-red" />
                 <img className="w-[30.09px] h-[25.09px] top-2 left-2 relative" src={Arrow} alt='' />
-               </div>
-          <div className="w-[217px] h-[130px] left-0 top-[282px] absolute right-[100px]">
+            </div>
+          <div className="w-[30vh] h-[13vh] left-0 top-[282px] absolute right-[100px]">
             <button
           onClick={handleExpansionClick}
-          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
-             >
+          className="w-[26vh] h-[15.65vh] right-12 top-4 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
+            >
           <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
             <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
             <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</p>
           </div>
           <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</p>
         </button>
-         </div>
-         
+        </div>
         </div>
         
     </div>
