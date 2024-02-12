@@ -100,7 +100,7 @@ const Home = () => {
         />
         </div>
         <div className="mt-80 flex items-center justify-center absolute ml-40">
-          <div className="radio-buttons flex gap-2 mt-2">
+          <div className="radio-buttons flex justify-evenly gap-2 mt-2">
             <label>
               <input
                 type="radio"
