@@ -7,16 +7,13 @@ import Arrow from '../assets/newsarrow.svg';
 
 const News = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [prevImageIndex, setPrevImageIndex] = useState(0); 
+  const [prevImageIndex, setPrevImageIndex] = useState(0);
   // const images = [Newspic1, Newspic2, Newspic3];
-
   // const images = [News1, News2, News3];
-
   const changeImage = (index) => {
     setPrevImageIndex(currentImageIndex);
     setCurrentImageIndex(index);
   };
-
   const nextImage = () => {
     setPrevImageIndex(currentImageIndex);
     if (currentImageIndex < images.length - 1) {
@@ -25,28 +22,23 @@ const News = () => {
       setCurrentImageIndex(0);
     }
   };
-
     const images = [Newspic1, Newspic2, Newspic3];
     const [currentImage, setCurrentImage] = useState(images[0]);
     const [activeIndex, setActiveIndex] = useState(0);
-  
     const handleImageChange = (index) => {
       setCurrentImage(images[index]);
       setActiveIndex(index);
     };
-  
     const handleSwipe = (direction) => {
       const newIndex = direction === 'next' ? (activeIndex + 1) % images.length : (activeIndex - 1 + images.length) % images.length;
       handleImageChange(newIndex);
     };
-
     const handleExpansionClick = () => {
       // Handle click action for the expansion plan section
       // For example, you can navigate to a specific page
       // or perform any other desired action.
       console.log('Expansion section clicked');
     };
-
   return (
     <div className="sm:h-[600px] max-w-[100%] sm:overflow-x-hidden w-screen sm:bg-lightgreen sm:mr-40 sm:relative">
       <div className="sm:flex flex-col sm:flex-row sm:justify-start ">
@@ -83,8 +75,8 @@ const News = () => {
           className="w-[217px] h-[130px] left-0 top-0 mb-4 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
         >
           <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
-            <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
-            <p className="text-zinc-600 text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</p>
+            <p className="text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
+            <p className="text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</p>
           </div>
           <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</p>
         </button>
@@ -101,7 +93,7 @@ const News = () => {
             />
             <span
                   className={`indicator [${
-                    index === currentImage ? 277:385}px]"bg-red" : ""
+                    index === currentImage ? 27:385}vh]"bg-red" : ""
                   }`}
                 ></span>
             </label>
@@ -179,7 +171,6 @@ const News = () => {
         </button>
         </div>
         </div>
-        
     </div>
   </div>
   );
