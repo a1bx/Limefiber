@@ -1,23 +1,29 @@
-import {useRef} from 'react';
+import { useRef, useState } from 'react';
 import ServiceIcon1 from '../assets/serviceicon1.svg';
+import ServiceIcon2 from '../assets/servIcon2.svg';
+import ServiceIcon3 from '../assets/serviceicon3.svg';
+import ServiceIcon4 from '../assets/iconbox3.svg';
 import Ellipse13 from '../assets/ellipse13.svg';
-import { AiOutlineRight, AiOutlineLeftCircle,AiOutlineRightCircle} from "react-icons/ai";
- 
+import { AiOutlineRight, AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
+
 
 const Services = () => {
   const scrollRef = useRef(null);
+  const [scrollIndex, setScrollIndex] = useState(0);
 
   const scrollLeft = () => {
-    if (scrollRef.current) {
+    if (scrollRef.current && scrollIndex > 0) {
       const cardWidth = scrollRef.current.firstChild.clientWidth;
       scrollRef.current.scrollLeft -= cardWidth;
+      setScrollIndex(scrollIndex - 1);
     }
   };
 
   const scrollRight = () => {
-    if (scrollRef.current) {
+    if (scrollRef.current && scrollIndex < 3) { // Assuming you have 4 cards, adjust if needed
       const cardWidth = scrollRef.current.firstChild.clientWidth;
       scrollRef.current.scrollLeft += cardWidth;
+      setScrollIndex(scrollIndex + 1);
     }
   };
 
@@ -29,7 +35,7 @@ const Services = () => {
       <img
         src={Ellipse13}
         alt=""
-        className="absolute top-1 md:top-16 left-1/2 w-[820px] h-[300px]"
+        className="absolute top-1 md:top-16 left-1/2 w-[123vh] h-[50vh]"
       />
       <div className=" ml-5 relative bg-lightgreen w-[100%] md:w-[90%] p-5  h-[610px] rounded-tr-[400px] md:rounded-bl-[400px]">
         <div className="text-center text-zinc-500 text-xs font-light font-['Baloo Da 2'] leading-7 tracking-[6.30px] p-0 md:p-0">
@@ -48,13 +54,13 @@ const Services = () => {
         <div className="flex ">
           <div className="flex gap-2 md:gap-4 p-2 md:mt-8 ml-2 md:ml-20 relative z-10">
             <button
-              className="hidden md:block  size-auto place-items-center mt-[200px] opacity-30"
+              className={`hidden md:block size-auto place-items-center mt-[200px] opacity-${scrollIndex === 0 ? '30' : '100'}`}
               onClick={scrollLeft}
             >
               <AiOutlineLeftCircle style={{ fontSize: "2em" }} />
             </button>
             <button
-              className="hidden md:block size-auto place-items-center mt-[200px]"
+              className={`hidden md:block size-auto place-items-center mt-[200px] opacity-${scrollIndex === 3 ? '30' : '100'}`}
               onClick={scrollRight}
             >
               <AiOutlineRightCircle style={{ fontSize: "2em" }} />
@@ -75,14 +81,14 @@ const Services = () => {
                 dapibus laoreet dolor nec imperdiet.
               </p>
             </div>
-            <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
+            <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105">
               <img
-                src={ServiceIcon1}
+                src={ServiceIcon2}
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
               <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
-                BASIC PACKAGE
+                STANDARD PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -90,14 +96,14 @@ const Services = () => {
                 dapibus laoreet dolor nec imperdiet.
               </p>
             </div>
-            <div className="w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
+            <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105">
               <img
-                src={ServiceIcon1}
+                src={ServiceIcon3}
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
               <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
-                BASIC PACKAGE
+                PREMIUM PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -105,14 +111,14 @@ const Services = () => {
                 dapibus laoreet dolor nec imperdiet.
               </p>
             </div>
-            <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 ml-10 hover:scale-105">
+            <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105">
               <img
-                src={ServiceIcon1}
+                src={ServiceIcon4}
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
               <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
-                BASIC PACKAGE
+                PRO PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -120,6 +126,7 @@ const Services = () => {
                 dapibus laoreet dolor nec imperdiet.
               </p>
             </div>
+              {/* Repeat the above card divs for all your cards */}
             </div>
           </div>
         </div>
