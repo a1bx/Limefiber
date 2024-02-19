@@ -35,9 +35,9 @@ const Services = () => {
       <img
         src={Ellipse13}
         alt=""
-        className="absolute top-1 md:top-16 left-1/2 w-[123vh] h-[50vh]"
+        className="absolute top-3 md:top-16 left-1/2 w-[123vh] h-[67vh]"
       />
-      <div className=" ml-5 relative bg-lightgreen w-[100%] md:w-[90%] p-5  h-[610px] rounded-tr-[400px] md:rounded-bl-[400px]">
+      <div className=" ml-5 relative bg-lightgreen w-[100%] md:w-[90%] p-5  h-[75vh] rounded-tr-[400px] md:rounded-bl-[400px]">
         <div className="text-center text-zinc-500 text-xs font-light font-['Baloo Da 2'] leading-7 tracking-[6.30px] p-0 md:p-0">
           SERVICES & PRODUCTS
         </div>
