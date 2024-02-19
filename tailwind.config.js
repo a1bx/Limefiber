@@ -11,6 +11,9 @@ module.exports = {
       "green":"#75A774",
       "gray":"#F2F2F2"
     },
+    fontFamily: {
+      "Baloo Da 2": ["'Baloo Da 2'", "cursive"],
+    },
     extend: {},
   },
   plugins: [],

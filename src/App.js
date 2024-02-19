@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './components/landingpage';
+import Home from './components/home';
 import Value from './components/value';
 import Services from './components/services';
 import About from './components/about';
