@@ -43,7 +43,7 @@ const Value = () => {
 
         <div
           className="hidden sm:block w-[86.01px] h-[0px]  rotate-[89.33deg] border mt-60"
-          // style={{ borderColor: "#D8D8D8" }}
+          style={{ borderColor: "#D8D8D8" }}
         ></div>
 
         <div className="w-full md:w-[352px] h-[380px] md:h-[508px] bg-white rounded-[28px]">
