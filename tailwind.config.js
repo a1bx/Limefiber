@@ -12,7 +12,7 @@ module.exports = {
       "gray":"#F2F2F2"
     },
     fontFamily: {
-      "Baloo Da 2": ["'Baloo Da 2'", "cursive"],
+      "Baloo-Da-2": ["'Baloo Da 2'", "cursive"],
     },
     extend: {},
   },
