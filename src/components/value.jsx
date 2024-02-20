@@ -10,10 +10,10 @@ import Map from '../assets/map.svg';
 const Value = () => {
   return (
     <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center md:justify-center">
-      <div className="text-center text-zinc-500 text-xs font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px] mb-2">
+      <div className="text-center text-zinc-500 text-xs font-normal leading-7 tracking-[6.30px] mb-2">
         VALUE PROPOSITION
       </div>
-      <h1 className="text-center text-2xl md:text-4xl font-semibold font-['Baloo Da 2']">
+      <h1 className="text-center text-2xl md:text-4xl font-semibold font-Baloo-Da-2">
         LimeFiber Vision and Goals
       </h1>
       <div className="flex flex-col sm:flex-row md:mx-20 mx-auto gap-4 p-5 mt-8 justify-items-center">
@@ -23,7 +23,7 @@ const Value = () => {
             alt="Icon 1"
             className="w-[65px] h-[65px] mx-auto mb-2"
           />
-          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-['Baloo Da 2'] leading-7">
+          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-Baloo-Da-2 leading-7">
             Unlimited Internet
           </h2>
           <p
@@ -52,7 +52,7 @@ const Value = () => {
             alt="Icon 2"
             className="w-[65px] h-[65px] mx-auto mb-2"
           />
-          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-['Baloo Da 2'] leading-7">
+          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-Baloo-Da-2 leading-7">
             Simple and Secure
           </h2>
           <p
@@ -81,7 +81,7 @@ const Value = () => {
             alt="Icon 3"
             className="w-[65px] h-[65px] mx-auto mb-2  "
           />
-          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-['Baloo Da 2'] leading-7">
+          <h2 className="font-semibold text-[20px] md:text-[23px] lg:text-[26px] text-center font-Baloo-Da-2 leading-7">
             Customer Support
           </h2>
           <p
@@ -105,10 +105,10 @@ const Value = () => {
           <div className="text-sm font-normal font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
             COVERAGE
           </div>
-          <div className="w-85% wrap-text text-[20px] font-bold font-['Baloo Da 2'] leading-loose">
+          <div className="w-85% wrap-text text-[20px] font-bold font-Baloo-Da-2 leading-loose">
             Check your Home Fiber Coverage
           </div>
-          <div className="w-[322.05px] h-[131.77px] text-black text-opacity-60 text-xl font-normal font-['Baloo Da 2'] leading-relaxed mt-4">
+          <div className="w-[322.05px] h-[131.77px] text-opacity-40 text-xl font-normal font-Baloo-Da-2 leading-relaxed mt-4">
             Find out if your area is Home Fiber Ready! To begin click the button
             below
           </div>
