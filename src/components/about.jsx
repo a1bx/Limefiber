@@ -13,7 +13,7 @@ const About = () => {
       <div className="text-center text-zinc-500 text-sm font-normal mb-10 font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
         TESTIMONIALS
       </div>
-      <h1 className="text-center text-black text-[28px] md:text-[38px] font-normal font-['Baloo Da 2'] leading-7 mt-4">
+      <h1 className="text-center text-black text-[28px] md:text-[38px] font-normal font-Baloo-Da-2 leading-7 mt-4">
         What our customers are saying about us!
       </h1>
       <div className="grid grid-row md:grid-cols-2 md:gap-y-2 md:gap-x-20 gap-5 md:ml-60 justify justify-items-center mr-40">
@@ -47,7 +47,7 @@ const About = () => {
               USER123456
             </p>
           </div>
-        </div> 
+        </div>
         {/* <div className="w-[470px] h-[237px] relative">
     <div className="w-[470px] h-[237px] left-0 top-0 absolute opacity-10 rounded-[10px] border-2 border-white" />
     <div className="h-[179px] left-[135px] top-[35px] absolute">
