@@ -13,6 +13,7 @@ module.exports = {
     },
     fontFamily: {
       "Baloo-Da-2": ["'Baloo Da 2'", "cursive"],
+      "Baloo-Regular": ["'Baloo Regular'", "cursive"],
     },
     extend: {},
   },
