@@ -44,7 +44,7 @@ const Home = () => {
         {/* <Navigate to='/home' /> */}
         <div className="flex flex-col w-full lg:flex-row">
           <div>
-            <div className="text-5xl font-semibold font-Baloo-Da-2 leading-[81px] mb-2 p-10 ml-10">
+            <div className="text-5xl font-semibold font-Baloo-Regular leading-[81px] mb-2 p-10 ml-10">
               We provide Home Fiber Internet, quick and <br></br>reliable!
               <p className="w-[555px] h-[62px] text-black text-lg font-normal font-Baloo-Da-2 leading-7 mt-4 ">
                 Our goal is to provide unlimited internet and offer a simple,
@@ -87,7 +87,7 @@ const Home = () => {
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="text-center z-10">
         <div className="w-[210px] text-white text-xl font-medium font-Baloo-Da-2 capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
-            <button className="w-[120px] border py-3 font-normal font-Baloo-Da-2 leading-tight rounded-sm mt-10">
+            <button className="w-[120px] border py-3 font-normal font-Baloo-Da-2 leading-tight rounded-md mt-10">
             Get Started
             </button>
         </div>
