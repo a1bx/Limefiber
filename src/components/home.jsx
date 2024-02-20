@@ -86,7 +86,7 @@ const Home = () => {
       <div className="lg:hidden hero-section relative h-[400px] bg-cover bg-center flex items-center text-white">
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="text-center z-10">
-        <div className="w-[210px] text-white text-xl font-medium font-Baloo-Da-2 capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
+        <div className="w-[210px] text-white text-xl font-medium font-Baloo-Regular capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
             <button className="w-[120px] border py-3 font-normal font-Baloo-Da-2 leading-tight rounded-md mt-10">
             Get Started
             </button>
@@ -131,7 +131,7 @@ const Home = () => {
 
       
       <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-2">
-              <p className="text-black font-normal font-Baloo-Da-2 text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
+              <p className="text-black font-normal font-Baloo-Regular text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
               </p>
