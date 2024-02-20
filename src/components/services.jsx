@@ -42,11 +42,11 @@ const Services = () => {
           SERVICES & PRODUCTS
         </div>
         <div className="text-center p-4">
-          <span className="text-blacktext-[24px]  md:text-[38px] font-semibold font-['Baloo Da 2'] leading-[47.83px]">
+          <span className="text-blacktext-[24px]  md:text-[38px] font-semibold font-Baloo-Da-2 leading-[47.83px]">
             LimeFiber
             <br />
           </span>
-          <span className=" text-[20px] md:text-[32px] font-normal font-['Baloo Da 2'] leading-[47.83px]">
+          <span className=" text-[20px] md:text-[32px] font-normal font-Baloo-Da-2 leading-[47.83px]">
             Services and Packages
           </span>
         </div>
@@ -72,7 +72,7 @@ const Services = () => {
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
-              <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
+              <div className="font-semibold font-Baloo-Da-2 tracking-wide ml-4 mt-2">
                 BASIC PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
@@ -87,7 +87,7 @@ const Services = () => {
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
-              <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
+              <div className="font-semibold font-Baloo-Da-2 tracking-wide ml-4 mt-2">
                 STANDARD PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
@@ -102,7 +102,7 @@ const Services = () => {
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
-              <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
+              <div className="font-semibold font-Baloo-Da-2 tracking-wide ml-4 mt-2">
                 PREMIUM PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
@@ -117,7 +117,7 @@ const Services = () => {
                 alt="Icon 1"
                 className="w-[52px] h-12 bg-red rounded-[10px] p-2 ml-4 mt-2"
               />
-              <div className="font-semibold font-['Baloo Da 2'] tracking-wide ml-4 mt-2">
+              <div className="font-semibold font-Baloo-Da-2 tracking-wide ml-4 mt-2">
                 PRO PACKAGE
               </div>
               <p className="text-sm max-w-full p-4 ">
@@ -130,7 +130,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="text-green text-lg font-normal font-['Baloo Da 2'] leading-7 text-center mt-8 cursor-pointer relative flex justify-center ml-4">
+        <div className="text-green text-lg font-normal font-Baloo-Da-2 leading-7 text-center mt-8 cursor-pointer relative flex justify-center ml-4">
           See More Services and Products <AiOutlineRight className='mt-2'/>
         </div>
         
