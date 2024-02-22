@@ -11,8 +11,11 @@ module.exports = {
       "green":"#75A774",
       "gray":"#F2F2F2"
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Baloo': ['"Baloo Da 2"', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
-
