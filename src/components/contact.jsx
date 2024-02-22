@@ -33,17 +33,17 @@ const contact = () => {
               Contact LimeFiber
               <br />
             </span>
-            <span className="text-black text-[28px] md:text-[38px] font-normal font-['Baloo Da 2'] leading-[47.83px] mt-4">
+            <span className="text-black text-[28px] md:text-[38px] font-normal font-Baloo leading-[47.83px] mt-4">
               The best Home Fiber service
             </span>
           </div>
         </div>
-        <div className="md:mt-20 md:w-[515px] w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
+        <div className="md:mt-20 md:w-[515px] w-[100%] h-[82px] text-black text-opacity-60 text-[14px] font-normal font-Baloo leading-[24.87px] tracking-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
         </div>
-        <div className="w-[100%] h-[82px] p-2 text-black text-opacity-60 text-[14px] font-normal font-['Baloo Da 2'] leading-[24.87px] tracking-tight">
+        <div className="w-[100%] h-[82px] p-2 text-black text-opacity-60 text-[14px] font-normal font-Baloo leading-[24.87px] tracking-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
