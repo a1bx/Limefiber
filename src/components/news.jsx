@@ -31,13 +31,13 @@ const News = () => {
             <div className="hidden sm:text-[40px] sm:font-semibold sm:font-['Baloo Da 2'] sm:leading-[48px]">
               News
             </div>
-            <div className="sm:hidden text-center text-black text-[17px] font-normal font-['Baloo Da 2'] leading-7">
+            <div className="sm:hidden text-center text-black text-[17px] font-normal font-Baloo leading-7">
               LimeFiber News and Stories
             </div>
           </div>
-          <div className="hidden sm:flex ml-10 mt-4 w-[368px] ml:10 text-base font-['Baloo Da 2'] leading-normal">LimeFiber expands operations in Northern Kenya, Western Kenya and more!</div>
+          <div className="hidden sm:flex ml-10 mt-4 w-[368px] ml:10 text-base font-Baloo leading-normal">LimeFiber expands operations in Northern Kenya, Western Kenya and more!</div>
           <div className='hidden sm:flex sm:ml-10'>
-            <button className="w-[162px] h-[49px] bg-green text-white sm:w-[140px] sm:px-2 rounded-md hover:bg-green hover:text-white mt-10 py-2">
+            <button className="w-[162px] h-[49px] bg-green text-white font-Baloo sm:w-[140px] sm:px-2 rounded-md hover:bg-green hover:text-white mt-10 py-2">
               Learn more
             </button>
           </div>
@@ -55,10 +55,10 @@ const News = () => {
                 className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
               >
                 <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
-                  <p className="text-base font-medium font-['Baloo Da 2'] leading-normal">01</p>
-                  <p className="text-base font-medium font-['Baloo Da 2'] leading-normal">Expansion plans</p>
+                  <p className="text-base font-medium font-Baloo leading-normal">01</p>
+                  <p className="text-base font-medium font-Baloo leading-normal">Expansion plans</p>
                 </div>
-                <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-['Baloo Da 2'] leading-[33.60px]">LimeFiber Ke</p>
+                <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-Baloo leading-[33.60px]">LimeFiber Ke</p>
               </button>
             </div>
           </div>
