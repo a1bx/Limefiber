@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row mt-32 md:mt-0 md:gap-10 absolute p-0 md:p-5 font-light">
           <div className="w-[271px] left-[17px] mb-4 flex gap-2 sm:hidden">
           <div className="w-[13px] h-[13px] rounded-sm border" />
-              <span className="text-black text-xs font-normal font-['Baloo Da 2'] leading-tight">I agree to the website's terms and conditions</span>
+              <span className="text-black text-xs font-normal font-Baloo leading-tight">I agree to the website's terms and conditions</span>
             </div>
             <a href="contact" className="link link-hover hover:text-red">
               CONTACT
@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="font-['Baloo Da 2'] leading-[27px] hover:text-red cursor-pointer">
               TERMS OF SERVICES
             </div>
-            <div className="md:hidden w-[369px] h-[32.17px] top-[200px] text-base font-normal font-['Baloo Da 2'] leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
+            <div className="md:hidden w-[369px] h-[32.17px] top-[200px] text-base font-normal font-Baloo leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
           <div className="mt-20 flex justify-center gap-5">
             <img
@@ -37,13 +37,13 @@ const Footer = () => {
               alt=""
               className="w-32 h-14 p-2 absolute md:relative top-52 md:top-0 right-10 "
             />
-            <div className="hidden w-[369px] h-[32.17px] left-[400px] text-base font-normal font-['Baloo Da 2'] leading-relaxed md:flex items-center">© 2023 LimeFiber. All rights reserved.</div>
+            <div className="hidden w-[369px] h-[32.17px] left-[400px] text-base font-normal font-Baloo leading-relaxed md:flex items-center">© 2023 LimeFiber. All rights reserved.</div>
           </div>
         </div>
         <div>
           <div className="mr-10 flex items-center">
             <div
-              className="text-base font-normal font-['Baloo Da 2'] leading-[27px] w-[100%] border-bottom border-black absolute md:relative ml-0 md:ml-10  "
+              className="text-base font-normal font-Baloo leading-[27px] w-[100%] border-bottom border-black absolute md:relative ml-0 md:ml-10  "
               style={{ color: "#707070" }}
             >
               Subscribe to our newsletters
