@@ -44,19 +44,19 @@ const Home = () => {
         {/* <Navigate to='/home' /> */}
         <div className="flex flex-col w-full lg:flex-row">
           <div>
-            <div className="text-5xl font-semibold font-Baloo-Regular leading-[81px] mb-2 p-10 ml-10">
+            <div className="text-5xl font-semibold font-Baloo leading-[81px] mb-2 p-10 ml-10">
               We provide Home Fiber Internet, quick and <br></br>reliable!
-              <p className="w-[555px] h-[62px] text-black text-lg font-normal font-Baloo-Da-2 leading-7 mt-4 ">
+              <p className="w-[555px] h-[62px] text-black text-lg font-normal font-Baloo leading-7 mt-4 ">
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
               </p>
             </div>
             <div className="ml-10 p-10 grid grid-cols-4 mt-10">
-              <button className="bg-green text-white rounded-md hover:text-white ">
+              <button className="bg-green font-Baloo text-white rounded-md hover:text-white ">
                 Get Started
               </button>
               <div className="w-[169px] h-[60px] left-[50px] relative">
-                <div className="left-[50px] top-[15px] absolute text-black text-lg font-semibold font-Baloo-Da-2 leading-7">
+                <div className="left-[50px] top-[15px] absolute text-black text-lg font-semibold font-Baloo leading-7">
                   Learn More
                 </div>
                 <div className="w-[60px] h-[60px] left-0 top-0 absolute">
@@ -87,7 +87,7 @@ const Home = () => {
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="text-center z-10">
         <div className="w-[210px] text-white text-xl font-medium font-Baloo capitalize leading-relaxed mt-20">Get started with LimeFiber</div>
-            <button className="w-[120px] border py-3 font-normal font-Baloo-Da-2 leading-tight rounded-md mt-10">
+            <button className="w-[120px] border py-3 font-normal font-Baloo leading-tight rounded-md mt-10">
             Get Started
             </button>
         </div>
@@ -131,12 +131,12 @@ const Home = () => {
 
       
       <div className="ml-5 sm:hidden p-2 grid grid-flow-row mx-2">
-              <p className="text-black font-normal font-Baloo-Regular text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
+              <p className="text-black font-normal font-Baloo text-base max-w-full my-10 md:mb-0 md:mt-10 p-0 md:p-10 text-center">
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
               </p>
               <div className="w-[169px] h-[60px] place-self-center mt-2 relative">
-                <div className="left-[50px] top-[15px] absolute text-black text-lg font-semibold font-Baloo-Da-2 leading-7">
+                <div className="left-[50px] top-[15px] absolute text-black text-lg font-semibold font-Baloo leading-7">
                   Learn More
                 </div>
                 <div className="w-[60px] h-[60px] left-0 top-0 absolute">
