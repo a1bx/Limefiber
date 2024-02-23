@@ -5,6 +5,7 @@ import Newspic3 from '../assets/news3.svg';
 import ArrowRight from '../assets/arrowright.svg';
 import Arrow from '../assets/newsarrow.svg';
 // import { Navigate } from 'react-router-dom';
+// import Article from '../assets/article.svg';
 
 const News = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -74,7 +75,9 @@ const News = () => {
                 <div className={`indicator ${currentImageIndex === index ? 'bg-red' : ''}`}></div>
               </label>
             ))}
+            
           </div>
+          
           <div className='sm:hidden flex justify-center'>
             <button className="w-[101px] bg-green text-white sm:px-4 rounded-md hover:bg-green hover:text-white mt-8 py-4">
               Learn more
@@ -94,6 +97,7 @@ const News = () => {
                 <span className={`indicator ${currentImageIndex === index ? 'bg-red' : ''}`}></span>
               </label>
             ))}
+            {/* <img src={Article} alt="" className='relative flex bottom-[10vh] right-[40vh]'/> */}
           </div>
           {images.map((image, index) => (
             <img
