@@ -7,6 +7,11 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 import News from './components/news';
 import Contact from './components/contact';
+// import { NOTFOUND } from 'dns';
+// import NotFound from './components/pagenotfound';
+// import Products from './components/products';
+
+
 
 function App() {
   return (
@@ -18,7 +23,10 @@ function App() {
       <About/>
       <News/>
       <Contact/>
+      {/* <NotFound/> */}
+      {/* <Products/> */}
       <Footer/>
+
     </div>
   );
 }
