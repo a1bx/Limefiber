@@ -19,14 +19,14 @@ function Services () {
             slides: {
                 origin: 'center',
                 perView: 1.25,
-                spacing: 10,
+                spacing: 5,
             },
             breakpoints: {
-                '(min-width: 1024px)': {
+                '(min-width: 720px)': {
                     slides: {
-                        origin: 'auto',
+                        origin: 'center',
                         perView: 3.5,
-                        spacing: 32,
+                        spacing: 20,
                     },
                 },
             },
@@ -90,7 +90,7 @@ function Services () {
                         <div className="relative flex scroll-smooth p-2 ">
                             <div id="keen-slider" className="keen-slider">
                                  
-                                <div className="w-[300px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105 keen-slider__slide">
+                                <div className="w-[200px] md:w-[380px] h-50 bg-white rounded-[10px] p-2 md:ml-10 hover:scale-105 keen-slider__slide">
                                   <img
                                   src={ServiceIcon1}
                                   alt="Icon 1"
