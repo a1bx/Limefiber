@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a{
+ list-style: none;
+ color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}

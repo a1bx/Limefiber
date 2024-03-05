@@ -7,6 +7,7 @@ import User4 from "../assets/user4.svg";
 const About = () => {
   return (
     <div
+      id="about"
       name="about"
       className="p-2 mt-screen h-[1150px] md:h-[650px] relative max-w-full overflow-hidden"
     >

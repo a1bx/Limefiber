@@ -5,7 +5,7 @@ import Ellipse16 from "../assets/ellipse16.svg";
 
 const contact = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-5 md:mt-[-60px] relative">
+    <div id="contacts" className="flex flex-col md:flex-row mt-5 md:mt-[-60px] relative">
       <div className="flex gap-3 p-4 absolute top-40 md:top-0 mt-20 mb-2 md:mt-0 md:relative">
         <img
           src={Ellipse16}
