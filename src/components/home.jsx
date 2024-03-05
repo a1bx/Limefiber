@@ -39,7 +39,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="ml-2 h-[680px] p-4 hidden lg:block">
+      <div id='home' className="ml-2 h-[680px] p-4 hidden lg:block">
         <link rel="home" href="" />
         {/* <Navigate to='/home' /> */}
         <div className="flex flex-col w-full lg:flex-row">
