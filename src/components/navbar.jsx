@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             src={Logo}
-            alt=""
+            alt="logo"
             className="w-[82px] h-[35px] md:w-[292px] md:h-[130px] md:ml-10 md:p-2 md:mr-[100px] cursor-pointer relative"
           />
         </div>
