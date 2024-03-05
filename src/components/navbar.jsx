@@ -46,7 +46,7 @@ const Navbar = () => {
           <div className="w-[129px] h-[460px] left-[16px] top-[119px] absolute">
             <div className="left-0 top-[50px] absolute">
               <a
-                href="#products"
+                href="products"
                 className="text-black text-xl font-normal font-['Baloo Da 2'] leading-relaxed"
               >
                 Products
