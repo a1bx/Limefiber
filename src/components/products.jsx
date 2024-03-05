@@ -9,6 +9,8 @@ import Icon from "../assets/icon.svg";
 import Router from "../assets/router.svg";
 import Line from "../assets/Icon color.svg";
 import Map from "../assets/map.svg";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const Products = () => {
     const slides = [Banner2, Banner3, Banner1];
@@ -22,6 +24,8 @@ const Products = () => {
       setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
   return (
+    <>
+    <Navbar></Navbar>
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="overflow-hidden w-[1440px] h-[3604px] relative">
         <img className="w-[1248px] top-[2709px] left-[87px] absolute h-px object-cover" alt="Line" src={Line} />
@@ -147,6 +151,8 @@ const Products = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 export default Products;
