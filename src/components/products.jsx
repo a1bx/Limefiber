@@ -24,10 +24,11 @@ const Products = () => {
       setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
   return (
-    <div className="bg-white flex flex-row justify-center w-full overflow-x-hidden">
+    <div className="bg-white w-full overflow-x-hidden">
       
       <div className="md:w-[1440px] md:h-[3604px]">
         <Navbar/>
+        {/* <Footer/> */}
         <div className="relative h-[50vh] md:h-[90vh] bg-cover bg-center flex items-center text-white">
           <div className="text-center z-10">
             <div className="absolute top-20 p-4 md:top-[242px] md:left-[747px] font-baloo font-medium text-white text-[20px] md:text-[45px] tracking-[0] leading-[43px] whitespace-nowrap">
@@ -140,10 +141,10 @@ const Products = () => {
               Get started
             </button>
             <div className="absolute w-[327px] h-[234px] top-0 left-0">
-              <p className="absolute w-[304px] top-0 left-0 font-Baloo_Da_2-Medium font-medium text-black text-[25px] tracking-[0] leading-[32px]">
+              <p className="absolute w-[304px] top-0 left-0 font-Baloo font-medium text-black text-[25px] tracking-[0] leading-[32px]">
                 Check your Home Fiber Coverage
               </p>
-              <p className="absolute w-[322px] top-[103px] left-px font-Baloo_Da_2-Regular font-normal text-[20px] tracking-[0] leading-[26px]">
+              <p className="absolute w-[322px] top-[103px] left-px font-Baloo font-normal text-[20px] tracking-[0] leading-[26px]">
                 Find out if your area is Home Fiber Ready! To begin click the button below
               </p>
             </div>
@@ -153,8 +154,12 @@ const Products = () => {
             <img className="hidden md:block w-[687.53px] h-[405.44px] rounded-[10px]" src={Icon} alt="Icon 2" />
           </div>
         </div>
-        {/* <Footer/> */}
+        <div className="relative top-[200vh] w-full">
+        <Footer/>
+        </div>
+        
       </div>
+      {/* <Footer/> */}
     </div>
   );
 };
