@@ -111,7 +111,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="w-[188px] h-[49px] md:ml-[512px] top-[650px] p-6 ml-3 md:top-5 md:p-2 absolute">
+        <div className="w-[188px] h-[49px] md:ml-[512px] top-[-12vh] p-6 ml-3 md:top-5 md:p-2 relative">
           <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-['Baloo Da 2'] leading-7 md:cursor-pointer">
             Log in
           </button>
