@@ -10,6 +10,7 @@ import Router from "../assets/router.svg";
 import Line from "../assets/Icon color.svg";
 import Map from "../assets/map.svg";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 const Products = () => {
     const slides = [Banner2, Banner3, Banner1];
@@ -23,9 +24,9 @@ const Products = () => {
       setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
+    <div className="bg-white flex flex-row justify-center w-full overflow-x-hidden">
       
-      <div className="md:w-[1440px] md:h-[3604px] relative">
+      <div className="md:w-[1440px] md:h-[3604px]">
         <Navbar/>
         <div className="relative h-[50vh] md:h-[90vh] bg-cover bg-center flex items-center text-white">
           <div className="text-center z-10">
@@ -52,7 +53,7 @@ const Products = () => {
     <button onClick={handlePrev} className="bg-white rounded h-20 bottom-[40vh] p-2 right-[170vh] mt-80 flex items-center justify-center absolute ml-40">
         <AiOutlineLeft style={{ fontSize: "2em", color: "#75A774" }} />
     </button>
-    <button onClick={handleNext} className="bg-white rounded h-20 bottom-[40vh] p-2 left-[150vh] mt-80 flex items-center justify-center absolute ml-40">
+    <button onClick={handleNext} className="bg-white hidden rounded h-20 bottom-[40vh] p-2 left-[150vh] mt-80 md:flex items-center justify-center absolute ml-40">
         <AiOutlineRight style={{ fontSize: "2em", color: "#75A774" }} />
     </button>
     </div>
@@ -133,7 +134,7 @@ const Products = () => {
           
         </div>
         <img className="md:w-[1248px] md:top-[2709px] md:left-[87px] absolute h-px object-cover" alt="Line" src={Line} />
-        <div className="md:absolute relative top-[190vh] p-4 md:w-[162.5vh] md:top-[340vh] md:left-[10vh] grid grid-cols-2 gap-4">
+        <div className="w-full md:absolute relative overflow-x-hidden top-[190vh] p-4 md:w-[162.5vh] md:top-[340vh] md:left-[10vh] grid grid-cols-2 gap-4">
           <div className="relative w-[327px] h-[302px]">
             <button className="px-4 py-2 font-Baloo rounded-full border text-green hover:bg-green hover:text-white mt-4 !h-[51px] !absolute !left-[2px] !w-[133px] !top-[246px]">
               Get started
@@ -142,7 +143,7 @@ const Products = () => {
               <p className="absolute w-[304px] top-0 left-0 font-Baloo_Da_2-Medium font-medium text-black text-[25px] tracking-[0] leading-[32px]">
                 Check your Home Fiber Coverage
               </p>
-              <p className="absolute w-[322px] top-[103px] left-px font-Baloo_Da_2-Regular font-normal text-[#00000094] text-[20px] tracking-[0] leading-[26px]">
+              <p className="absolute w-[322px] top-[103px] left-px font-Baloo_Da_2-Regular font-normal text-[20px] tracking-[0] leading-[26px]">
                 Find out if your area is Home Fiber Ready! To begin click the button below
               </p>
             </div>
@@ -152,6 +153,7 @@ const Products = () => {
             <img className="hidden md:block w-[687.53px] h-[405.44px] rounded-[10px]" src={Icon} alt="Icon 2" />
           </div>
         </div>
+        {/* <Footer/> */}
       </div>
     </div>
   );
