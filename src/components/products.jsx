@@ -148,18 +148,21 @@ const Products = () => {
                 Find out if your area is Home Fiber Ready! To begin click the button below
               </p>
             </div>
-            <img className="absolute md:relative h-[300px] md:top-[260px] opacity-40 md:opacity-100 right-[-160px] md:h-[60px] bottom-0 ml-10" src={Map} />
+            <img className="absolute md:relative h-[300px] md:top-[260px] opacity-40 md:opacity-100 right-[-160px] md:h-[60px] bottom-0 ml-10" src={Map} alt=''/>
           </div>
           <div className="relative">
             <img className="hidden md:block w-[687.53px] h-[405.44px] rounded-[10px]" src={Icon} alt="Icon 2" />
           </div>
         </div>
-        <div className="relative top-[200vh] w-full">
+        <div className="md:hidden relative top-[200vh] w-full md:bottom-[-0vh]">
         <Footer/>
         </div>
         
       </div>
-      {/* <Footer/> */}
+      <div className="hidden md:block">
+      <Footer/>
+      </div>
+      
     </div>
   );
 };
