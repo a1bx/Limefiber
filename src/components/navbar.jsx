@@ -116,7 +116,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="w-[188px] h-[49px] md:ml-[512px] top-[-12vh] p-6 ml-3 md:top-[-4vh] md:p-2 relative md:flex md:left-[40vh]">
+        <div className="w-[188px] h-[49px] md:ml-[512px] top-[-12vh] p-6 ml-3 md:top-[-4vh] md:p-2 relative md:flex md:left-[47vh] md:pr-4">
           <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-Baloo hover:text-red leading-7 md:cursor-pointer">
             Log in
           </button>
