@@ -17,8 +17,10 @@ const Footer = () => {
         <div className="flex flex-row md:flex-col">
           <div className="flex flex-col md:flex-row mt-32 md:mt-0 md:gap-10 absolute p-0 md:p-5 font-light">
           <div className="w-[271px] left-[17px] mb-4 flex gap-2 sm:hidden">
-          <div className="w-[13px] h-[13px] rounded-sm border" />
-              <span className="text-black text-xs font-normal font-Baloo leading-tight">I agree to the website's terms and conditions</span>
+          {/* <div className="w-[13px] h-[13px] rounded-sm border" /> */}
+              {/* <span className="text-black text-xs font-normal font-Baloo leading-tight">I agree to the website's terms and conditions</span> */}
+              <input type="checkbox"  defaultChecked />
+              <p className="text-black text-xs font-normal font-Baloo leading-tight sm:hidden">I agree to the website's terms and conditions</p>
             </div>
             <a href="contact" className="link link-hover font-Baloo hover:text-red">
               CONTACT
