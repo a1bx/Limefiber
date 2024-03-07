@@ -8,7 +8,7 @@ const Footer = () => {
       
     <div className="w-full md:w-[1380px] h-[0px] border border-gray md:ml-14 mr-8">
     <div className="h-10 relative mt-8 ml-12 mr-10 sm:hidden left-0 top-0 bg-white rounded border border-green">
-        <div className="left-[90px] top-[6px] absolute p-1 text-black text-xs font-normal font-['Baloo Da 2'] leading-tight hover:text-white hover:bg-green">
+        <div className="left-[90px] top-[6px] absolute p-1 text-black text-xs font-normal font-Baloo leading-tight hover:text-white hover:bg-green">
       Contact LimeFiber
       </div>
       </div>
@@ -20,13 +20,13 @@ const Footer = () => {
           <div className="w-[13px] h-[13px] rounded-sm border" />
               <span className="text-black text-xs font-normal font-Baloo leading-tight">I agree to the website's terms and conditions</span>
             </div>
-            <a href="contact" className="link link-hover hover:text-red">
+            <a href="contact" className="link link-hover font-Baloo hover:text-red">
               CONTACT
             </a>
-            <a href="about" className="link link-hover hover:text-red">
+            <a href="about" className="link link-hover font-Baloo hover:text-red">
               ABOUT US
             </a>
-            <div className="font-['Baloo Da 2'] leading-[27px] hover:text-red cursor-pointer">
+            <div className="font-Baloo leading-[27px] hover:text-red cursor-pointer">
               TERMS OF SERVICES
             </div>
             <div className="md:hidden w-[369px] h-[32.17px] top-[200px] text-base font-normal font-Baloo leading-relaxed absolute items-center">© 2023 LimeFiber. All rights reserved.</div>
