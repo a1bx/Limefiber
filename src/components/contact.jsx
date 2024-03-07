@@ -25,11 +25,11 @@ const contact = () => {
       </div>
       <div className="md:w-1/2 w-[100%] p-8 md:mt-20 text-center md:text-left mt-4 mb-6">
         <div className="mb-96 md:mb-0">
-          <div className="text-sm mt-10 font-light font-['Baloo Da 2'] leading-7 tracking-[6.30px]">
+          <div className="text-sm mt-10 font-light font-Baloo leading-7 tracking-[6.30px]">
             SUPPORT & CONTACT
           </div>
           <div>
-            <span className="text-black text-[28px] md:text-[38px] font-semibold font-['Baloo Da 2'] leading-[47.83px] mt-2">
+            <span className="text-black text-[28px] md:text-[38px] font-semibold font-Baloo leading-[47.83px] mt-2">
               Contact LimeFiber
               <br />
             </span>
@@ -48,7 +48,7 @@ const contact = () => {
           mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet
           dolor nec imperdiet.
         </div>
-        <button className="w-[207px] h-[66px] bg-green text-white rounded-[10px] mt-10">
+        <button className="w-[207px] h-[66px] bg-green text-white font-Baloo rounded-[10px] mt-10">
           Explore more
         </button>
       </div>
