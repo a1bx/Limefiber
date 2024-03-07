@@ -26,10 +26,9 @@ const Products = () => {
   return (
     <div className="bg-white w-full overflow-x-hidden">
       
-      <div className="md:w-[1440px] md:h-[3604px]">
+      <div className="md:w-full md:px-10 md:h-[400vh]">
         <Navbar/>
-        {/* <Footer/> */}
-        <div className="relative h-[50vh] md:h-[90vh] bg-cover bg-center flex items-center text-white">
+        <div className="relative md:flex h-[50vh] md:h-[90vh] bg-cover bg-center flex items-center text-white">
           <div className="text-center z-10">
             <div className="absolute top-20 p-4 md:top-[242px] md:left-[747px] font-baloo font-medium text-white text-[20px] md:text-[45px] tracking-[0] leading-[43px] whitespace-nowrap">
         LimeFiber Products and Services
@@ -42,6 +41,7 @@ const Products = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum adipiscing iaculis semper.
             </p>
         </div>
+        {/* <button>Learn more</button> */}
         </div>
         <div className="absolute inset-0">
         <img
@@ -51,10 +51,10 @@ const Products = () => {
         />
         </div>
     {/* < className="mt-80 flex items-center justify-center absolute ml-40"> */}
-    <button onClick={handlePrev} className="bg-white rounded h-20 bottom-[40vh] p-2 right-[170vh] mt-80 flex items-center justify-center absolute ml-40">
+    <button onClick={handlePrev} className="bg-white hidden rounded h-20 bottom-[40vh] p-2 right-[170vh] mt-80 md:flex items-center justify-center absolute ml-40">
         <AiOutlineLeft style={{ fontSize: "2em", color: "#75A774" }} />
     </button>
-    <button onClick={handleNext} className="bg-white hidden rounded h-20 bottom-[40vh] p-2 left-[150vh] mt-80 md:flex items-center justify-center absolute ml-40">
+    <button onClick={handleNext} className="bg-white hidden rounded h-20 bottom-[40vh] p-2 left-[151vh] mt-80 md:flex items-center justify-center absolute ml-40">
         <AiOutlineRight style={{ fontSize: "2em", color: "#75A774" }} />
     </button>
     </div>
@@ -62,21 +62,21 @@ const Products = () => {
         <div className="relative">
           
           {/* bundled packages */}
-          <div className="absolute mt-10 justify-center ">
+          <div className="absolute md:grid mt-10 content-center md:top-[10vh] ">
           <img
-            className="p-4 w-full mt-2 md:left-[601px] md:w-[509px] md:h-[430px]"
+            className="p-4 w-full mt-2 md:absolute md:left-[96vh] md:w-[509px] md:h-[430px]"
             alt="Rectangle"
             src={Bundled}
           />
-          <p className="relative text-center text-[24px] md:w-[320px] md:top-[18vh] md:left-[95px] font-Baloo font-medium md:text-[38px]">
+          <p className="relative text-center text-[24px] md:w-[320px] md:top-[18vh] md:left-[39vh] font-Baloo font-medium md:text-[38px]">
             Bundled packages
           </p>
-          <p className="relative p-2 md:w-[500px] md:top-[168px] left-0 [font-family:'Baloo_Da_2-Regular',Helvetica] font-normal text-[#6f6f6f] text-[17px] text-center tracking-[0] leading-[normal]">
+          <p className="relative p-2 md:w-[500px] md:top-[20vh] md:left-[25vh] font-Baloo font-normal text-[#6f6f6f] text-[17px] text-center tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum
             adipiscing iaculis semper.
           </p>
           <div className="flex justify-center">
-          <button className="mt-10 md:top-[295px] md:left-[169px] relative w-[162px] h-[49px] bg-green rounded-2xl md:rounded-lg">
+          <button className="mt-10 md:top-[295px] md:left-[45vh] relative md:absolute w-[162px] h-[49px] bg-green rounded-2xl md:rounded-lg">
               <p className="absolute w-[94px] top-[11px] left-[34px] [font-family:'Baloo_Da_2-Regular',Helvetica] font-normal text-white text-[18px] tracking-[0] leading-[28.5px]">
                 View More
               </p>
@@ -86,16 +86,16 @@ const Products = () => {
           </div>
 
           {/* products */}
-          <div className="">
-          <p className="relative md:w-[163px] top-[120vh] md:left-[760px] font-Baloo text-[24px] font-medium text-center md:text-[38px] tracking-[0] leading-[43px]  ">
+          <div className="md:absolute md:top-[15vh]">
+          <p className="relative md:absolute md:w-[163px] md:top-[80vh] top-[123vh] md:left-[110vh] font-Baloo text-[24px] font-medium text-center md:text-[38px] tracking-[0] leading-[43px]  ">
             Products
           </p>
-          <p className="relative top-[120vh] md:top-[731px] md:left-[605px] md:absolute md:w-[500px] font-Baloo font-normal text-[#6f6f6f] text-[17px] text-center">
+          <p className="relative p-2 top-[124vh] md:top-[731px] md:left-[90vh] md:absolute md:w-[500px] font-Baloo font-normal text-[#6f6f6f] text-[17px] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum
             adipiscing iaculis semper.
           </p>
           <div className="flex justify-center">
-            <button className="top-[125vh] relative w-[164px] h-[49px] md:left-[750px] md:top-[835px] bg-green rounded-2xl">
+            <button className="top-[129vh] md:absolute relative w-[164px] h-[49px] md:left-[110vh] md:top-[835px] bg-green rounded-2xl">
                 <p className="absolute w-[94px] top-[11px] left-[34px] [font-family:'Baloo_Da_2-Regular',Helvetica] font-normal text-white text-[18px] tracking-[0] leading-[28.5px]">
                   View More
                 </p>
@@ -103,39 +103,40 @@ const Products = () => {
               </button>
             </div>
             <img
-            className="top-[80vh] w-full p-4 left-0 absolute md:w-[509px] md:h-[430px] object-cover"
+            className="top-[83vh] h-[3/4] w-full p-4 md:left-24 absolute md:relative md:w-[66vh] md:top-[67vh] md:h-full object-cover"
             alt="Rectangle"
             src={Router}
           />
+          
           </div>
 
           {/* services */}
-          <div>
-          <p className="relative text-center top-[169vh] md:w-[194px] md:top-[1168px] md:left-[143px] font-Baloo font-medium text-light-colorsblack-light text-[24px] md:text-[38px] tracking-[0] leading-[43px] whitespace-nowrap">
+          <div className="md:absolute md:top-[15vh]">
+          <p className="relative text-center top-[178vh] md:w-[194px] md:top-[150vh] md:left-[43vh] font-Baloo font-medium text-light-colorsblack-light text-[24px] md:text-[38px] tracking-[0] leading-[43px] whitespace-nowrap">
             Services
           </p>
-          <p className="top-[170vh] md:top-[1241px] left-0 relative md:w-[500px] [font-family:'Baloo_Da_2-Regular',Helvetica] font-normal text-[#6f6f6f] text-[17px] text-center tracking-[0] leading-[normal]">
+          <p className="top-[179vh] p-2 md:top-[154vh] md:left-[22vh] relative md:w-[500px] font-Baloo font-normal text-[#6f6f6f] text-[17px] text-center tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum
             adipiscing iaculis semper.
           </p>
           <div className="flex justify-center">
-              <button className="relative top-[174vh] w-[162px] h-[49px] bg-green rounded-2xl md:top-[1345px] md:left-[144px]">
-                <p className="absolute w-[94px] top-[11px] left-[34px] [font-family:'Baloo_Da_2-Regular',Helvetica] font-normal text-white text-[18px] tracking-[0] leading-[28.5px]">
+              <button className="relative top-[184vh] w-[162px] h-[49px] bg-green rounded-2xl md:top-[155vh] md:left-[24vh]">
+                <p className="absolute w-[94px] top-[11px] left-[34px] font-Baloo font-normal text-white text-[18px] tracking-[0] leading-[28.5px]">
                   View More
                 </p>
                 <AiOutlineRight className="!absolute !w-[21px] !h-[18px] !top-[16px] !left-[117px]" color="white" />
               </button>
             </div>
               <img
-            className="md:top-[1073px] w-full p-4 top-[155vh] md:left-[605px] absolute md:w-[509px] md:h-[430px] object-cover"
+            className="md:top-[1073px] w-full p-4 top-[157vh] md:left-[95vh] absolute md:w-[509px] md:h-[430px] object-cover"
             alt="Rectangle"
             src={Services}
           />
           </div>
           
         </div>
-        <img className="md:w-[1248px] md:top-[2709px] md:left-[87px] absolute h-px object-cover" alt="Line" src={Line} />
-        <div className="w-full md:absolute relative overflow-x-hidden top-[190vh] p-4 md:w-[162.5vh] md:top-[340vh] md:left-[10vh] grid grid-cols-2 gap-4">
+        <img className="md:w-[162vh] md:top-[320vh] md:left-[87px] absolute h-px object-cover" alt="Line" src={Line} />
+        <div className="w-full md:absolute relative overflow-x-hidden top-[190vh] p-4 md:w-[162.5vh] md:top-[330vh] md:left-[10vh] grid grid-cols-2 gap-4">
           <div className="relative w-[327px] h-[302px]">
             <button className="px-4 py-2 font-Baloo rounded-full border text-green hover:bg-green hover:text-white mt-4 !h-[51px] !absolute !left-[2px] !w-[133px] !top-[246px]">
               Get started
