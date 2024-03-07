@@ -7,13 +7,13 @@ const Footer = () => {
     <div className="h-[60vh] md:h-[200px] max-w-full overflow-x-hidden">
       
     <div className="w-full md:w-[1380px] h-[0px] border border-gray md:ml-14 mr-8">
-    <div className="h-10 relative mt-8 ml-12 mr-10 sm:hidden left-0 top-0 bg-white rounded border border-green">
+    <div className="h-10 relative mt-8 ml-6 mr-6 sm:hidden left-0 top-0 bg-white rounded border border-green">
         <div className="left-[90px] top-[6px] absolute p-1 text-black text-xs font-normal font-Baloo leading-tight hover:text-white hover:bg-green">
       Contact LimeFiber
       </div>
       </div>
     </div>
-      <footer className="w-[85%] mx-auto text-base-content rounded flex flex-col md:flex-row  justify-between p-5 relative">
+      <footer className="w-[95%] mx-auto text-base-content rounded flex flex-col md:flex-row  justify-between p-5 relative">
         <div className="flex flex-row md:flex-col">
           <div className="flex flex-col md:flex-row mt-32 md:mt-0 md:gap-10 absolute p-0 md:p-5 font-light">
           <div className="w-[271px] left-[17px] mb-4 flex gap-2 sm:hidden">
