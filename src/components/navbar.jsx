@@ -110,7 +110,7 @@ const Navbar = () => {
               placeholder="Search"
             />
             <img
-              className="w-3 h-3 left-[10px] top-[10px] absolute"
+              className="w-3 h-3 left-[10px] top-[1rem] absolute"
               src={Search}
               alt=""
             />
