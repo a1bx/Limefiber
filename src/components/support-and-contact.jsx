@@ -8,7 +8,7 @@ import Livechat from '../assets/livechat.svg';
 
 const ContactPage = () => {
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto">
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="w-72 h-8 left-[16px] relative md:hidden">
