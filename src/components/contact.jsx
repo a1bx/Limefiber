@@ -2,6 +2,7 @@ import React from "react";
 import Contact from "../assets/contact.svg";
 import Vector9 from "../assets/vector9.svg";
 import Ellipse16 from "../assets/ellipse16.svg";
+import {Link} from "react-router-dom"
 
 const contact = () => {
   return (
@@ -49,7 +50,8 @@ const contact = () => {
           dolor nec imperdiet.
         </div>
         <button className="w-[207px] h-[66px] bg-green text-white font-Baloo rounded-[10px] mt-10">
-          Explore more
+        <Link to="/contactpage"> Learn More</Link>
+          {/* Explore more */}
         </button>
       </div>
     </div>
