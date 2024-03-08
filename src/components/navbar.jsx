@@ -67,7 +67,12 @@ const Navbar = () => {
               Help
             </div>
             <div className="left-0 top-[246px] absolute text-black text-xl font-normal font-Baloo leading-relaxed">
-              Contact
+            <a
+                href="contactpage"
+                className="text-black text-xl font-normal font-Baloo leading-relaxed"
+              >
+                Contact
+              </a>
             </div>
             <div className="left-0 top-[296px] absolute text-black text-xl font-normal font-Baloo leading-relaxed">
               Search
