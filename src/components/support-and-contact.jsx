@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import Navbar from './navbar';
 import Search from '../assets/search.svg';
 import Footer from './footer';
-// import { AIOutlineRight } from 'react-icons/ai';
+import { AiOutlineRight,AiOutlineDown } from 'react-icons/ai';
 import Livechat from '../assets/livechat.svg';
 
 const ContactPage = () => {
@@ -49,14 +49,26 @@ const ContactPage = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4 font-Baloo">FAQs</h2>
           <div className="mb-4 shadow-lg rounded-md p-4">
-            <h3 className="text-lg  mb-2 font-semibold font-Baloo">What is Limefiber?</h3>
-            {/* <AiOutlineDown/> */}
+            <h3 className="text-lg  mb-2 font-semibold font-Baloo">What is Limefiber?
+            <div className="ml-20 mt-2" style={{ borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', padding: '0.3em' }}>
+      <AiOutlineDown style={{ fontSize: '1.2em', color: 'white' }} /></div>
+            </h3>
+            
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum adipiscing iaculis semper.</p>
-            {/* <AIOutlineRight/> */}
           </div>
           <div className='mb-4 shadow-lg rounded-md p-4'>
-            <h3 className="text-lg font-semibold mb-2 font-Baloo">Is Limefiber the best </h3>
+            <h3 className="text-lg font-semibold mb-2 font-Baloo">Is Limefiber the best
+            <AiOutlineRight style={{ fontSize: "1.2em", color:"red" }}/></h3>
             <p>Home Service fiber?</p>
+          </div>
+          <div className='mb-4 shadow-lg rounded-md p-4'>
+            <h3 className="text-lg font-normal mb-2 font-Baloo">What are the discount sales on the LimeFiber products?
+            <AiOutlineRight style={{ fontSize: "1.2em", color:"red" }}/>
+            </h3>
+          </div>
+          <div className='mb-4 shadow-lg rounded-md p-4'>
+            <h3 className="text-lg font-normal mb-2 font-Baloo">Does the LimeFiber coverage cover majority of the region?b
+            <AiOutlineRight style={{ fontSize: "1.2em", color:"red" }}/></h3>
           </div>
         </div>
       </div>
@@ -68,6 +80,13 @@ const ContactPage = () => {
         </div>
         <p className='text-xs mt-10 mb-4'>Question? Complaints? Concerns?</p>
         <hr className="my-3 w-1/3 border border-gray mb-4" />
+        <div className='mb-6'>
+        <h3 classname="mt-4">Try our <span class="text-green">Lime</span><span class="text-red">Line</span> ChatBot!</h3>
+        </div>
+        <div className='flex justify-center'>
+        <button className='flex justify-center bg-white border border-green py-2 px-2 rounded-lg mb-4'>Get started <AiOutlineRight style={{ fontSize: "1em", color:"green" }} /></button>
+        </div>
+        
       </div>
       <Footer/>
     </div>
