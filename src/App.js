@@ -11,6 +11,7 @@ import Contact from './components/contact';
 import NotFound from './components/pagenotfound';
 import Products from './components/products';
 import {Routes, Route} from "react-router-dom";
+import ContactPage from './components/support-and-contact';
 
 
 
@@ -35,6 +36,8 @@ function App() {
             }
           />
           <Route path="products" element={<Products />} />
+          {/* <Route path="contactpage" element= {<ContactPage/>}/> */}
+          <Route path='contactpage' element={<ContactPage/>}/>
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>
