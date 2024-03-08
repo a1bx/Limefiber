@@ -9,7 +9,8 @@ module.exports = {
       "white":"#FFFFFF",
       "lightgreen":"#EFFFEF",
       "green":"#75A774",
-      "gray":"#F2F2F2"
+      // "gray":"#F2F2F2",
+      "gray":"#D8D8D8"
     },
     extend: {
       fontFamily: {
