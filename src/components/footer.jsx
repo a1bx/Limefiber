@@ -22,7 +22,7 @@ const Footer = () => {
               <input type="checkbox"  defaultChecked />
               <p className="text-black text-xs font-normal font-Baloo leading-tight sm:hidden">I agree to the website's terms and conditions</p>
             </div>
-            <a href="contact" className="link link-hover font-Baloo hover:text-red">
+            <a href="contactpage" className="link link-hover font-Baloo hover:text-red">
               CONTACT
             </a>
             <a href="about" className="link link-hover font-Baloo hover:text-red">
