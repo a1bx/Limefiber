@@ -48,12 +48,11 @@ const ContactPage = () => {
         </div>
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4 font-Baloo">FAQs</h2>
-          <div className="mb-4 shadow-lg rounded-md p-4">
+          <div className="mb-4 mt-10 shadow-lg rounded-md p-4">
             <h3 className="text-lg  mb-2 font-semibold font-Baloo">What is Limefiber?
-            <div className="ml-20 mt-2" style={{ borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', padding: '0.3em' }}>
-      <AiOutlineDown style={{ fontSize: '1.2em', color: 'white' }} /></div>
             </h3>
-            
+            <div className="ml-[34vh] absolute top-[100vh]" style={{ borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', padding: '0.5em' }}>
+      <AiOutlineDown style={{ fontSize: '1.2em', color: 'white' }} /></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum adipiscing iaculis semper.</p>
           </div>
           <div className='mb-4 shadow-lg rounded-md p-4'>
