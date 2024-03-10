@@ -61,7 +61,7 @@ const Navbar = () => {
               </a>
             </div>
             <div className="left-0 top-[150px] absolute text-black text-xl font-normal font-Baloo leading-relaxed">
-              <a href="blog">Blog</a>
+              <a href="blogs">Blog</a>
             </div>
             <div className="left-0 top-[196px] absolute text-black text-xl font-normal font-Baloo leading-relaxed">
               Help
