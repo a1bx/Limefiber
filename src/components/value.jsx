@@ -9,7 +9,7 @@ import Map from '../assets/map.svg';
 
 const Value = () => {
   return (
-    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center md:justify-center">
+    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center md:justify-items-center">
       <div className="text-center text-zinc-500 text-xs font-normal leading-7 tracking-[6.30px] mb-2">
         VALUE PROPOSITION
       </div>
@@ -35,7 +35,7 @@ const Value = () => {
             laoreet dolor nec imperdiet.
           </p>
           <div className="flex justify-center">
-          <button className="md:ml-20 px-4 py-2 place-self-center font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="px-4 py-2 justify-center font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
           </div>
@@ -64,7 +64,7 @@ const Value = () => {
             laoreet dolor nec imperdiet.
           </p>
           <div className="flex justify-center">
-          <button className="flex place-self-center md:ml-20 px-4 py-2 font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="flex justify-center px-4 py-2 font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
           </div>
@@ -93,7 +93,7 @@ const Value = () => {
             laoreet dolor nec imperdiet.
           </p>
           <div className='flex justify-center'>
-          <button className="md:ml-20 place-self-center mx-auto px-4 py-2 font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
+          <button className="place-self-center mx-auto px-4 py-2 font-Baloo rounded-md bg-green hover:bg-green hover:text-white text-white">
             Learn More
           </button>
           </div>
