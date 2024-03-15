@@ -20,7 +20,7 @@ const News = () => {
   };
 
   // const handleExpansionClick = () => {
-  //   Navigate('/news');
+  //   Navigate('/blogs');
   // }
 
   return (
@@ -48,20 +48,21 @@ const News = () => {
             <img className="w-full h-full object-cover" src={images[currentImageIndex]} alt='news pic' />
             <div className="w-12 left-[241px] top-[490px] absolute">
               <div className="w-12 h-12 bg-red" />
+              <a href="blogs"></a>
               <img className="w-[30.09px] h-[25.09px] bottom-9 left-2 relative" src={Arrow} alt='' />
             </div>
             <div className="w-[217px] h-[130px] left-[24px] top-[408px] absolute">
-              <button
-                // onClick={handleExpansionClick}
-                className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
-              >
-                <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
-                  <p className="text-base font-medium font-Baloo leading-normal">01</p>
-                  <p className="text-base font-medium font-Baloo leading-normal">Expansion plans</p>
-                </div>
-                <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-Baloo leading-[33.60px]">LimeFiber Ke</p>
-              </button>
-            </div>
+        <button
+          // onClick={handleExpansionClick}
+          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
+        >
+          <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
+            <p className="text-base font-medium font-Baloo leading-normal">01</p>
+            <p className="text-base font-medium font-Baloo leading-normal">Expansion plans</p>
+          </div>
+          <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-Baloo leading-[33.60px]">LimeFiber Ke</p>
+        </button>
+      </div>
           </div>
           <div className="mt-8 flex justify-center p-2 sm:ml-40">
             {images.map((_, index) => (
