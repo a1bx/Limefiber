@@ -26,21 +26,21 @@ const ContactPage = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <p className='font-Baloo font-bold text-2xl'>Support & Contact</p>
           <hr className="my-3 w-1/3 border border-gray" />
-          <h2 className="text-xl mb-4 font-Baloo">Contact Information</h2>
-          <div className=" mb-4">
-            <FaMapMarkerAlt className="text-gray-600 mr-2" />
+          <h2 className="text-xl mb-8 font-Baloo">Contact Information</h2>
+          <div className=" mb-4 ">
+            <FaMapMarkerAlt className="text-gray-600 mr-2" style={{ fontSize: "1.8em"}}/>
             <p className="font-black mb-4 font-Baloo">Address</p>
             <p className='text-start mt-4'>0000 Road,  Nairobi 00100, Kenya</p>
             {/* <input></input> */}
           </div>
           <div className="mb-4">
-            <FaPhone className="text-gray-600 mr-2" />
+            <FaPhone className="text-gray-600 mr-2" style={{ fontSize: "1.8em"}}/>
             <p className="font-black mb-4 font-Baloo">Phone</p>
             <p>Mobile: 0000 1111 2222</p>
             <p>Hotline: 0000 3333 4444</p>
           </div>
-          <div className="mt-4">
-            <FaEnvelope className="text-gray-600 mr-2" />
+          <div className="mt-4 flex">
+            <FaEnvelope className="text-gray-600 mr-2" style={{ fontSize: "1.8em"}} />
             <p className="font-black mb-4 font-Baloo">Email Address</p>
             <p>abc@gmail.com</p>
             <p>giftly_xyz@gmail.com</p>
@@ -51,7 +51,7 @@ const ContactPage = () => {
           <div className="mb-4 mt-10 shadow-lg rounded-md p-4">
             <h3 className="text-lg  mb-2 font-semibold font-Baloo">What is Limefiber?
             </h3>
-            <div className="ml-[34vh] absolute top-[100vh]" style={{ borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', padding: '0.5em' }}>
+            <div className="ml-[34vh] top-[100vh]" style={{ borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', padding: '0.5em' }}>
       <AiOutlineDown style={{ fontSize: '1.2em', color: 'white' }} /></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dolor odio odio malesuada at condimentum adipiscing iaculis semper.</p>
           </div>
