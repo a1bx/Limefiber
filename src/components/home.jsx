@@ -45,7 +45,7 @@ const Home = () => {
         <div className="flex flex-col w-full lg:flex-row">
           <div>
             <div className="text-5xl font-semibold font-Baloo leading-[81px] mb-2 p-10 ml-10">
-              We provide Home Fiber Internet, quick and <br></br>reliable!
+              We provide Home Fiber Internet, quick and reliable!
               <p className="w-[555px] h-[62px] text-black text-lg font-normal font-Baloo leading-7 mt-4 ">
                 Our goal is to provide unlimited internet and offer a simple,
                 stable browsing experience.
