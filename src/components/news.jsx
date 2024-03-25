@@ -4,6 +4,7 @@ import Newspic2 from '../assets/news2.svg';
 import Newspic3 from '../assets/news3.svg';
 import ArrowRight from '../assets/arrowright.svg';
 import Arrow from '../assets/newsarrow.svg';
+import {Link} from "react-router-dom"
 // import { Navigate } from 'react-router-dom';
 // import Article from '../assets/article.svg';
 
@@ -39,7 +40,7 @@ const News = () => {
           <div className="hidden sm:flex ml-10 mt-4 w-[368px] ml:10 text-base font-Baloo leading-normal">LimeFiber expands operations in Northern Kenya, Western Kenya and more!</div>
           <div className='hidden sm:flex sm:ml-10'>
             <button className="w-[162px] h-[49px] bg-green text-white font-Baloo sm:w-[140px] sm:px-2 rounded-md hover:bg-green hover:text-white mt-10 py-2">
-              Learn more
+            <Link to="/blogs"> Learn More</Link>
             </button>
           </div>
         </div>
