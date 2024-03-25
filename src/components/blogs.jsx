@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import Banner3 from '../assets/banner3.svg';
 import Blogs from '../assets/blogs2.svg';
 import Blogs3 from '../assets/blogs3.svg';
+import Icon from '../assets/icon.svg';
+import { AiOutlineRight } from 'react-icons/ai';
 
 const trendingTopics = [
   {
@@ -24,43 +26,52 @@ const trendingTopics = [
     imageUrl: Blogs3,
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
   },
+  {
+    id: 4,
+    title: 'Top trends from spring',
+    imageUrl: Icon,
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+  },
 ];
 
 const BlogsPage = () => {
+  const topicsPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(1);
+  const indexOfLastTopic = currentPage * topicsPerPage;
+  const indexOfFirstTopic = indexOfLastTopic - topicsPerPage;
+  const currentTopics = trendingTopics.slice(indexOfFirstTopic, indexOfLastTopic);
+
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   return (
     <>
-    <Navbar/>
-    <div className="bg-white p-4">
-      <h1 className="text-2xl font-bold font-Baloo mb-4 pl-4">Trendy Topics on Home Fiber Technology</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {trendingTopics.map((topic) => (
-          <div key={topic.id} className="p-4 rounded">
-            <img src={topic.imageUrl} alt="Topic" className="mb-4 w-full" />
-            <h2 className="text-lg font-bold font-Baloo mb-2">{topic.title}</h2>
-            <p>{topic.content}</p>
-            <a href="#" className="text-green mt-2 font-Baloo inline-block">Read More</a>
-          </div>
-        ))}
-      </div>
-      <div className="mt-8 flex justify-center mb-8">
-        <button className="bg-green hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Previous
-        </button>
-        <button className="ml-4 bg-green hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Next
-        </button>
-      </div>
-      {/* <div className="text-lg font-bold font-Baloo mb-2 pl-4">Categories</div>
-        <div className="flex flex-wrap gap-2 pl-4">
-          {categories.map((category, index) => (
-            <button key={index} className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded">{category}</button>
+      <Navbar />
+      <div className="bg-white p-4">
+        <h1 className="text-3xl font-bold font-Baloo mb-4 pl-4 text-center">Trendy Topics on Home Fiber Technology</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 justify-items-center">
+          {currentTopics.map((topic) => (
+            <div key={topic.id} className="p-4 rounded">
+              <img src={topic.imageUrl} alt="Topic" className="mb-4 w-full md:w-full h-auto md:h-48 lg:h-80 object-contain" />
+              <h2 className="text-lg font-bold font-Baloo mb-2">{topic.title}</h2>
+              <p>{topic.content}</p>
+              <a href="#" className="text-green mt-2 font-Baloo inline-block">Read More</a>
+            </div>
           ))}
-        </div> */}
-      <Footer/>
-    </div>
+        </div>
+        <div className="mt-8 flex justify-center mb-8">
+          {Array.from({ length: Math.ceil(trendingTopics.length / topicsPerPage) }, (_, i) => (
+            <button key={i} onClick={() => paginate(i + 1)} className={`bg-green hover:bg-lightgreen hover:text-green text-white py-2 px-4 rounded ${currentPage === i + 1 ? 'bg-green' : ''}`}>
+              {i + 1}
+            </button>
+          ))}
+          <button className="ml-4 bg-green hover:bg-lightgreen hover:text-green text-white py-2 px-4 rounded">
+          <AiOutlineRight/>
+        </button>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };
 
 export default BlogsPage;
-
