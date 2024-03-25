@@ -11,3 +11,19 @@ a{
 html {
   scroll-behavior: smooth;
 }
+
+.slider-button {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .slider-button {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-button {
+    font-size: 1em; /* Further adjust font size for even smaller screens */
+  }
+}
