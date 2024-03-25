@@ -51,10 +51,10 @@ const BlogsPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 justify-items-center">
           {currentTopics.map((topic) => (
             <div key={topic.id} className="p-4 rounded">
-              <img src={topic.imageUrl} alt="Topic" className="mb-4 w-full md:w-full h-auto md:h-48 lg:h-80 object-contain" />
+              <img src={topic.imageUrl} alt="Topic" className="mb-4 w-full md:w-full h-auto md:h-48 lg:h-[20rem] object-contain" />
               <h2 className="text-lg font-bold font-Baloo mb-2">{topic.title}</h2>
               <p>{topic.content}</p>
-              <a href="#" className="text-green mt-2 font-Baloo inline-block">Read More</a>
+              <a href="/blogspage" className="text-green mt-2 font-Baloo inline-block">Read More</a>
             </div>
           ))}
         </div>
