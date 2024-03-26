@@ -39,7 +39,7 @@ const ContactPage = () => {
             <p>Mobile: 0000 1111 2222</p>
             <p>Hotline: 0000 3333 4444</p>
           </div>
-          <div className="mt-4 flex">
+          <div className="mt-4">
             <FaEnvelope className="text-gray-600 mr-2" style={{ fontSize: "1.8em"}} />
             <p className="font-black mb-4 font-Baloo">Email Address</p>
             <p>abc@gmail.com</p>
