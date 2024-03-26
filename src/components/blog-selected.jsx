@@ -25,9 +25,7 @@ const Blog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission here, for example, send the data to a backend server
     console.log(formData);
-    // Reset form fields
     setFormData({
       name: '',
       email: '',
@@ -111,7 +109,7 @@ const Blog = () => {
               </label>
               <button
                 type="submit"
-                className="bg-green text-white font-semibold py-2 px-4 rounded hover:bg-lightgreen font-Baloo focus:outline-none focus:bg-green"
+                className="bg-green text-white font-semibold py-2 px-4 rounded hover:bg-lightgreen font-Baloo focus:outline-none focus:bg-green hover:text-green"
               >
                 Post Comment
               </button>
