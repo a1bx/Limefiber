@@ -54,7 +54,7 @@ const Blog = () => {
                 <img src={ProfilePic1} alt="Profile 1" className="w-10 h-10 rounded-full" />
                 <div>
                   <div className="font-semibold font-Baloo">John Doe</div>
-                  <div className='justify-item-end ml-20 mb-10' ><BsFillReplyFill /></div>
+                  {/* <div className='justify-item-end ml-20 mb-10' ><BsFillReplyFill /></div> */}
                   <p className="text-gray-800 font-Baloo">Great blog post!</p>
                 </div>
               </div>
@@ -66,6 +66,14 @@ const Blog = () => {
                 </div>
               </div>
             </div>
+            <div className="flex space-x-4">
+                <img src={ProfilePic1} alt="Profile 1" className="w-10 h-10 rounded-full" />
+                <div>
+                  <div className="font-semibold font-Baloo">John Doe</div>
+                  {/* <div className='justify-item-end ml-20 mb-10' ><BsFillReplyFill /></div> */}
+                  <p className="text-gray-800 font-Baloo">Great blog post!</p>
+                </div>
+              </div>
           </div>
 
           <div>
@@ -76,7 +84,7 @@ const Blog = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2  border-bottom rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border-b-2 border-gray focus:outline-none focus:border-green"
                 placeholder="Your Name"
                 required
               />
@@ -85,7 +93,7 @@ const Blog = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 font-Baloo rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 font-Baloo border-b-2 border-gray focus:outline-none focus:border-green"
                 placeholder="Your Email"
                 required
               />
@@ -94,7 +102,7 @@ const Blog = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-2 font-Baloo rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 font-Baloo border-b-2 border-gray focus:outline-none focus:border-green"
                 placeholder="Your Phone"
               />
               <label className="ml-4 flex items-center">
