@@ -95,7 +95,7 @@ const Home = () => {
         <div className="absolute inset-0">
         <img
           src={currentBanner}
-          className="object-cover w-full h-full p-2 rounded"
+          className="object-cover w-full sm:w-screen h-full p-2 rounded"
           alt="Banner"
         />
         </div>
