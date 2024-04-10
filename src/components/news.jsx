@@ -20,9 +20,9 @@ const News = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const handleExpansionClick = () => {
-    Navigate('/blogs');
-  }
+  // const handleExpansionClick = () => {
+  //   Navigate('/blogs');
+  // }
 
   return (
     <div className="sm:h-[600px] max-w-[100%] sm:overflow-x-hidden w-screen sm:bg-lightgreen sm:mr-40 sm:relative">
@@ -54,7 +54,7 @@ const News = () => {
             </div>
             <div className="w-[217px] h-[130px] left-[24px] top-[408px] absolute">
         <button
-          onClick={handleExpansionClick}
+          // onClick={handleExpansionClick}
           className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
         >
           <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
