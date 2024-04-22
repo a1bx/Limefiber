@@ -9,14 +9,14 @@ import Map from '../assets/map.svg';
 
 const Value = () => {
   return (
-    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center md:justify-items-center">
-      <div className="text-center text-zinc-500 text-xs font-normal leading-7 tracking-[6.30px] mb-2">
+    <div className="sm:mt-20 max-w-full overflow-hidden grid justify-center sm:justify-items-center">
+      <div className="text-center text-xs font-normal leading-7 tracking-[6.30px] mb-2">
         VALUE PROPOSITION
       </div>
       <h1 className="text-center text-2xl md:text-4xl font-semibold font-Baloo">
         LimeFiber Vision and Goals
       </h1>
-      <div className="flex flex-col sm:flex-row md:mx-20 mx-auto gap-4 p-5 mt-8 justify-items-center">
+      <div className="flex flex-col md:flex-row sm:mx-20 mx-auto gap-4 p-5 mt-8 justify-items-center">
         <div className="w-full md:w-[352px] h-[380px] md:h-[508px] bg-white rounded-[28px]">
           <img
             src={Icon1}
