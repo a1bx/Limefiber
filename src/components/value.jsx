@@ -17,7 +17,7 @@ const Value = () => {
         LimeFiber Vision and Goals
       </h1>
       <div className="flex flex-col md:flex-row sm:mx-20 mx-auto gap-4 p-5 mt-8 justify-items-center">
-        <div className="w-full md:w-[352px] h-[380px] md:h-[508px] bg-white rounded-[28px]">
+        <div className="w-full  h-[380px] md:h-[508px] bg-white rounded-[28px]">
           <img
             src={Icon1}
             alt="Icon 1"
@@ -46,7 +46,7 @@ const Value = () => {
           style={{ borderColor: "#D8D8D8" }}
         ></div>
 
-        <div className="w-full md:w-[352px] h-[380px] md:h-[508px] bg-white rounded-[28px]">
+        <div className="w-full  h-[380px] md:h-[508px] bg-white rounded-[28px]">
           <img
             src={Icon2}
             alt="Icon 2"
@@ -75,7 +75,7 @@ const Value = () => {
           style={{ borderColor: "#D8D8D8" }}
         ></div>
 
-        <div className="w-full md:w-[352px] h-[380px] md:h-[508px]  bg-white rounded-[28px]">
+        <div className="w-full  h-[380px] md:h-[508px]  bg-white rounded-[28px]">
           <img
             src={Icon3}
             alt="Icon 3"
@@ -113,7 +113,7 @@ const Value = () => {
             below
           </div>
 
-          <div className="flex md:grid-flow-col grid-flow-row px-2 py-2 gap-10 mt-2 md:mt-10 ">
+          <div className="flex md:grid-flow-col grid-flow-row px-2 py-2 mt-2 md:mt-10 ">
             <button className="left-0 px-4 py-2 font-Baloo rounded-full border text-green hover:bg-green hover:text-white mt-4">
               Get started
             </button>
@@ -129,7 +129,7 @@ const Value = () => {
           <img
             src={Icon}
             alt="Icon 2"
-            className="w-[687.53px] h-[405.44px] rounded-[10px]"
+            className=" h-[405.44px] rounded-[10px]"
           />
         </div>
       </div>
