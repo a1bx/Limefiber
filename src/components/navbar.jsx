@@ -34,9 +34,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } lg:flex lg:items-center lg:w-auto`}
+        className={`${isOpen ? 'block' : 'hidden'} md:flex md:items-center md:w-auto`}
       >
         {/* <div className="hidden text-red text-lg font-normal font-['Baloo Da 2'] leading-7">
           Home
@@ -121,35 +119,18 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="w-[188px] h-[49px] md:ml-[512px] top-[-12vh] p-6 ml-3 md:top-[-4vh] md:p-2 relative md:flex md:left-[47vh] md:pr-4">
-          <button className="left-0 top-[10px] absolute text-black text-lg font-normal font-Baloo hover:text-red leading-7 md:cursor-pointer">
-            Log in
-          </button>
-          {/* ">
-            <div className="w-[119px] h-[49px] left-0 top-0 absolute " />
-            <button className="left-[30px] top-[10px] absolute text-white text-lg font-normal font-['Baloo Da 2'] leading-7">Sign up</button>
-            </div> */}
-          <button className="w-[119px] h-[49px] left-[69px] top-0 absolute bg-green font-Baloo hover:text-red cursor-pointer rounded-[10px] text-white">
-            sign up
-          </button>
+        <div className="hidden md:flex space-x-8 justify-center md:mr-10">
+          <a href="/" className="text-black hover:text-red text-lg font-normal font-Baloo">Home</a>
+          <a href="#services" className="text-black hover:text-red text-lg font-normal font-Baloo">Services</a>
+          <a href="#about" className="text-black hover:text-red text-lg font-normal font-Baloo">About Us</a>
+          <a href="#contacts" className="text-black hover:text-red text-lg font-normal font-Baloo">Contacts</a>
+        </div>
+        <div className="hidden md:flex space-x-4 items-center justify-center ml-auto">
+          <button className="text-black hover:text-red text-lg mb-6 w-[60px] h-[50px] font-normal font-Baloo">Log in</button>
+          <button className="bg-green w-[100px] h-[50px] mb-6 text-white rounded-[10px] px-4 py-2 font-Baloo hover:text-red">Sign up</button>
         </div>
       </div>
-      <div className="w-screen hidden h-[49px] md:block relative right-[50vh] top-4">
-        <div className="h-[29px] left-0 top-[15px]">
-          <div className="left-0 top-0 absolute hover:text-red cursor-pointer text-lg font-normal font-Baloo leading-7">
-            <a href="/">Home</a>
-          </div>
-          <div className="left-[87px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-Baloo leading-7">
-            <a href="#services">Services</a>
-          </div>
-          <div className="left-[199px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-Baloo leading-7">
-            <a href="#about">About Us</a>
-          </div>
-          <div className="left-[307px] top-0 absolute text-black hover:text-red cursor-pointer text-lg font-normal font-Baloo leading-7">
-            <a href="#contacts">Contacts</a>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };
