@@ -6,7 +6,7 @@ import ArrowRight from '../assets/arrowright.svg';
 import Arrow from '../assets/newsarrow.svg';
 import {Link} from "react-router-dom"
 import { Navigate } from 'react-router-dom';
-// import Article from '../assets/article.svg';
+import Article from '../assets/article.svg';
 
 const News = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -87,6 +87,18 @@ const News = () => {
           </div>
         </div>
         <div className="hidden sm:flex justify-center gap-1 p-4 relative mt-10">
+        {/* <div className="relative top-10vh">
+        <button
+          // onClick={handleExpansionClick}
+          className="w-[217px] h-[130px] left-0 top-0 relative bg-white bg-opacity-70 backdrop-blur-[3px]"
+        >
+          <div className="w-[172px] h-6 left-[32px] top-[32px] absolute justify-start items-center gap-2 inline-flex">
+            <p className="text-base font-medium font-Baloo leading-normal">01</p>
+            <p className="text-base font-medium font-Baloo leading-normal">Expansion plans</p>
+          </div>
+          <p className="left-[32px] top-[64px] absolute text-[28px] font-semibold font-Baloo leading-[33.60px]">LimeFiber Ke</p>
+        </button>
+      </div> */}
           <div className="sm:mt-[470px] absolute">
             {images.map((_, index) => (
               <label key={index} className="cursor-pointer p-2">
@@ -99,7 +111,7 @@ const News = () => {
                 <span className={`indicator ${currentImageIndex === index ? 'bg-red' : ''}`}></span>
               </label>
             ))}
-            {/* <img src={Article} alt="" className='relative flex bottom-[10vh] right-[40vh]'/> */}
+            {/* <img src={Article} alt="" className='absolute flex bottom-[10vh] right-[40vh]'/> */}
           </div>
           {images.map((image, index) => (
             <img
